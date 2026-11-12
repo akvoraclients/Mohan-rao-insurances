@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <!-- LIC Blue Background Icon Container -->
+  <rect x="4" y="8" width="64" height="64" rx="14" fill="#0B3B60"/>
+  
+  <!-- Outer Gold Ring Accent -->
+  <circle cx="36" cy="40" r="26" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 2" opacity="0.8"/>
+  
+  <!-- Protecting Cupped Hands (Stylized Gold) -->
+  <path d="M22 47 C24 53, 32 55, 36 55 C40 55, 48 53, 50 47 C46 49, 42 50, 36 50 C30 50, 26 49, 22 47 Z" fill="#F59E0B"/>
+  <path d="M20 42 C22 46, 26 50, 31 52 C27 49, 24 45, 23 41 C21 37, 21 34, 20 32 C19 36, 19 39, 20 42 Z" fill="#FCD34D"/>
+  <path d="M52 42 C50 46, 46 50, 41 52 C45 49, 48 45, 49 41 C51 37, 51 34, 52 32 C53 36, 53 39, 52 42 Z" fill="#FCD34D"/>
+  
+  <!-- Deepam / Lamp Base -->
+  <path d="M29 44 L43 44 C42 47, 30 47, 29 44 Z" fill="#F59E0B"/>
+  <rect x="34" y="44" width="4" height="3" fill="#F59E0B"/>
+  
+  <!-- Sacred Flame of Security -->
+  <path d="M36 22 C34 27, 30 31, 30 36 C30 40, 32.5 42, 36 42 C39.5 42, 42 40, 42 36 C42 31, 38 27, 36 22 Z" fill="#F59E0B"/>
+  <path d="M36 27 C35 30, 33 32, 33 36 C33 38, 34.5 40, 36 40 C37.5 40, 39 38, 39 36 C39 32, 37 30, 36 27 Z" fill="#FEF3C7"/>
+
+  <!-- Official Brand Typography -->
+  <text x="80" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0B3B60" letter-spacing="0.5">
+    भारतीय जीवन बीमा निगम
+  </text>
+  <text x="80" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#0B3B60" letter-spacing="0.2">
+    LIFE INSURANCE CORPORATION OF INDIA
+  </text>
+  <text x="80" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#D97706" letter-spacing="0.8">
+    योगक्षेमं वहाम्यहम् • Financial Security For Life
+  </text>
+</svg>

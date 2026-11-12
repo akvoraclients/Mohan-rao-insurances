@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Outer Gold Shield / Seal -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082C49" />
+      <stop offset="100%" stop-color="#0B3B60" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Outer Badge -->
+  <circle cx="120" cy="120" r="114" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="6"/>
+  <circle cx="120" cy="120" r="102" fill="none" stroke="#FDE68A" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- MDRT Round Table Star Cluster -->
+  <g transform="translate(120, 68)">
+    <polygon points="0,-16 4,-4 16,-4 7,3 10,15 0,8 -10,15 -7,3 -16,-4 -4,-4" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- MDRT Main Typography -->
+  <text x="120" y="118" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FEF3C7" letter-spacing="4">
+    MDRT
+  </text>
+  
+  <text x="120" y="142" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F59E0B" letter-spacing="3">
+    MEMBER
+  </text>
+
+  <!-- Subtitle ribbon text -->
+  <text x="120" y="168" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" fill="#94B9D7" letter-spacing="1.2">
+    THE PREMIER ASSOCIATION OF
+  </text>
+  <text x="120" y="180" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" fill="#94B9D7" letter-spacing="1.2">
+    FINANCIAL PROFESSIONALS®
+  </text>
+
+  <!-- Bottom laurel ornament -->
+  <path d="M70 196 Q120 215 170 196" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
