@@ -76,7 +76,7 @@ export const WHATSAPP_MESSAGES = {
 };
 
 // Preserved working Formspree submission endpoint
-export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqppwdnq';
+export const FORMSPREE_ENDPOINT = "https://formspree.io/f/myewzlkj";
 
 // Core LIC Life Insurance Portfolio & Guidance Services
 export const LIC_SERVICE_PORTFOLIO = [
