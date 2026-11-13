@@ -41,6 +41,20 @@ export function generateSeoMetadata(
       locale: isTa ? 'ta_IN' : 'en_IN',
       type: 'website',
       url: `/${lang}`,
+      images: [
+        {
+          url: '/images/owner.jpeg',
+          width: 1600,
+          height: 1200,
+          alt: isTa ? 'எம். மோகன் ராவ் - எல்.ஐ.சி நிதி ஆலோசகர்' : 'M. Mohan Rao - LIC Financial Advisor',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/owner.jpeg'],
     },
     icons: {
       icon: [

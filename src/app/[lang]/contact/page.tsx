@@ -10,6 +10,7 @@ import {
 import { generateSeoMetadata } from '@/lib/seo';
 import { Container } from '@/components/common/Container';
 import { SectionHeader } from '@/components/common/SectionHeader';
+import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { EnquiryForm } from '@/components/forms/EnquiryForm';
 import { MapPin, Phone, Mail, MessageCircle, ExternalLink, ShieldCheck } from 'lucide-react';
 
@@ -66,6 +67,9 @@ export default async function ContactPage({ params }: PageProps) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         {/* Contact Info & Direct Channels */}
         <div className="space-y-6">
+          {/* Advisor Introduction Profile */}
+          <OwnerProfile lang={lang} variant="hero" />
+
           {/* Quick Direct Actions Card */}
           <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xs">
             <div className="flex items-center gap-2 mb-2">

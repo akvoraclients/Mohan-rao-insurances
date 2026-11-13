@@ -3,9 +3,20 @@ import './globals.css';
 import { BUSINESS_INFO, BRAND_TAGLINE } from '@/lib/constants';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mmohanrao-insurance.com'),
   title: `${BUSINESS_INFO.name} | LIC Financial Advisor`,
   description:
     'M. Mohan Rao – Chairman’s Club Member & MDRT Financial Advisor, Life Insurance Corporation of India (Agency Code: 0195676N). Professional life insurance guidance in Hosur.',
+  openGraph: {
+    images: [
+      {
+        url: '/images/owner.jpeg',
+        width: 1600,
+        height: 1200,
+        alt: 'M. Mohan Rao – LIC Financial Advisor',
+      },
+    ],
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },

@@ -3,7 +3,7 @@ import { AwardItem, AwardCategory, OwnerProfileInfo } from '@/types';
 /**
  * PROFESSIONAL PROFILE DATA: M. MOHAN RAO
  * Source: Official LIC Agent Credentials (Agency Code: 0195676N)
- * An unverified personal photo is NOT used per safety instructions.
+ * Profile Photograph: /images/owner.jpeg
  */
 export const OWNER_PROFILE: OwnerProfileInfo = {
   name: 'M. Mohan Rao',
@@ -15,8 +15,8 @@ export const OWNER_PROFILE: OwnerProfileInfo = {
     en: 'Hosur, Tamil Nadu, India',
     ta: 'ஓசூர், தமிழ்நாடு, இந்தியா',
   },
-  imageSrc: '',
-  hasGenuinePhoto: false,
+  imageSrc: '/images/owner.jpeg',
+  hasGenuinePhoto: true,
 };
 
 /**

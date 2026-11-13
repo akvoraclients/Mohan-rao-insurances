@@ -22,18 +22,24 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
   const isTa = lang === 'ta';
   const roleText = profile.role[lang] || profile.role.en;
   const locationText = profile.location[lang] || profile.location.en;
+  const imageSrc = profile.imageSrc || '/images/owner.jpeg';
+  const hasPhoto = profile.hasGenuinePhoto || Boolean(imageSrc);
+
+  const imageAlt = isTa
+    ? `${profile.name} - ${roleText}`
+    : `${profile.name} – ${roleText}`;
 
   // Compact variant
   if (variant === 'compact') {
     return (
       <div className={`inline-flex items-center gap-3 p-2.5 pr-4 rounded-2xl bg-white border border-brand-navy-100 shadow-xs ${className}`}>
         <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-brand-navy-50 border border-brand-navy-200 shrink-0 flex items-center justify-center">
-          {profile.hasGenuinePhoto && profile.imageSrc ? (
+          {hasPhoto ? (
             <Image
-              src={profile.imageSrc}
-              alt={profile.name}
+              src={imageSrc}
+              alt={imageAlt}
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               sizes="48px"
             />
           ) : (
@@ -56,13 +62,13 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
       <div className={`relative rounded-3xl bg-white border border-brand-navy-200/90 p-5 shadow-xs ${className}`}>
         <div className="flex items-center gap-4">
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-brand-navy-800 border border-amber-400 shrink-0 flex items-center justify-center shadow-xs">
-            {profile.hasGenuinePhoto && profile.imageSrc ? (
+            {hasPhoto ? (
               <Image
-                src={profile.imageSrc}
-                alt={profile.name}
+                src={imageSrc}
+                alt={imageAlt}
                 fill
                 priority
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 640px) 64px, 80px"
               />
             ) : (
@@ -74,7 +80,7 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-1.5 mb-1">
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 text-[11px] font-bold border border-amber-200">
-                <ShieldCheck className="w-3 h-3 text-amber-600" aria-hidden="true" />
+                <ShieldCheck className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
                 <span>Agency Code: {BUSINESS_INFO.agencyCode}</span>
               </span>
             </div>
@@ -98,12 +104,12 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
         {/* Photo Container */}
         <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden bg-brand-navy-800 border-2 border-amber-400 shrink-0 shadow-md flex items-center justify-center">
-          {profile.hasGenuinePhoto && profile.imageSrc ? (
+          {hasPhoto ? (
             <Image
-              src={profile.imageSrc}
-              alt={`${profile.name} - ${BUSINESS_INFO.name}`}
+              src={imageSrc}
+              alt={imageAlt}
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               sizes="(max-width: 640px) 112px, 144px"
             />
           ) : (
