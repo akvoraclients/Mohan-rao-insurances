@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { SupportedLanguage } from '@/types';
 import { OWNER_PROFILE } from '@/lib/recognition';
 import { BUSINESS_INFO } from '@/lib/constants';
-import { MapPin, ShieldCheck, Award, User } from 'lucide-react';
+import { MapPin, ShieldCheck, Award, User, Building2 } from 'lucide-react';
 
 interface OwnerProfileProps {
   lang: SupportedLanguage;
@@ -26,8 +26,8 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
   const hasPhoto = profile.hasGenuinePhoto || Boolean(imageSrc);
 
   const imageAlt = isTa
-    ? `${profile.name} - ${roleText}`
-    : `${profile.name} – ${roleText}`;
+    ? `${profile.name} - ${roleText} ஓசூர்`
+    : `${profile.name} – ${roleText} in Hosur`;
 
   // Compact variant
   if (variant === 'compact') {
@@ -50,7 +50,7 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
         </div>
         <div className="min-w-0">
           <p className="text-xs font-bold text-brand-navy truncate">{profile.name}</p>
-          <p className="text-[11px] text-amber-700 font-semibold truncate">LIC Code: {BUSINESS_INFO.agencyCode}</p>
+          <p className="text-[11px] text-amber-700 font-semibold truncate">{roleText}</p>
         </div>
       </div>
     );
@@ -79,9 +79,9 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex flex-wrap items-center gap-1.5 mb-1">
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 text-[11px] font-bold border border-amber-200">
-                <ShieldCheck className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
-                <span>Agency Code: {BUSINESS_INFO.agencyCode}</span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-brand-navy-50 text-brand-navy text-[11px] font-bold border border-brand-navy-200">
+                <Building2 className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
+                <span>LIC • Star Health • United India</span>
               </span>
             </div>
             <h3 className="text-base sm:text-lg font-extrabold text-brand-navy truncate">
@@ -118,7 +118,7 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
                 <User className="w-8 h-8 text-amber-300" aria-hidden="true" />
               </div>
               <span className="text-xs font-extrabold text-white">{profile.name}</span>
-              <span className="text-[10px] text-amber-400 font-semibold">LIC Advisor</span>
+              <span className="text-[10px] text-amber-400 font-semibold">Insurance Advisor</span>
             </div>
           )}
         </div>
@@ -126,17 +126,17 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
         {/* Profile Content */}
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-2 mb-2">
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
-              <ShieldCheck className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
-              <span>LIC Code: {BUSINESS_INFO.agencyCode}</span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-900 border border-blue-200">
+              <ShieldCheck className="w-3.5 h-3.5 text-blue-700" aria-hidden="true" />
+              <span>Life Insurance (LIC)</span>
             </span>
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-navy-50 text-brand-navy border border-brand-navy-200">
-              <Award className="w-3.5 h-3.5 text-brand-gold-600" aria-hidden="true" />
-              <span>MDRT Member</span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-900 border border-emerald-200">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" aria-hidden="true" />
+              <span>Health Insurance (Star Health)</span>
             </span>
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-navy-50 text-brand-navy border border-brand-navy-200">
-              <Award className="w-3.5 h-3.5 text-brand-gold-600" aria-hidden="true" />
-              <span>Chairman&apos;s Club Member</span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-900 border border-amber-200">
+              <ShieldCheck className="w-3.5 h-3.5 text-amber-700" aria-hidden="true" />
+              <span>General Insurance (United India)</span>
             </span>
           </div>
 
@@ -155,8 +155,8 @@ export const OwnerProfile: React.FC<OwnerProfileProps> = ({
           {showBio && (
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal border-t border-slate-100 pt-3">
               {isTa
-                ? 'இந்திய ஆயுள் காப்பீட்டுக் கழகத்தின் (LIC) தலைவர் மன்ற உறுப்பினர் மற்றும் MDRT நிதி ஆலோசகரான திரு. எம். மோகன் ராவ் (முகவர் குறியீடு: 0195676N), வாடிக்கையாளர்களுக்கு நேர்மையான ஆயுள் காப்பீட்டு வழிகாட்டலை வழங்குகிறார். குடும்ப நிதிப் பாதுகாப்பு, குழந்தைகளின் கல்வித் திட்டங்கள், ஓய்வூதியத் திட்டங்கள், பாலிசி புதுப்பித்தல் மற்றும் க்ளெய்ம் ஆவண ஆதரவு போன்ற சேவைகள் வெளிப்படைத்தன்மையுடன் வழங்கப்படுகின்றன.'
-                : 'As a Chairman’s Club Member and MDRT Financial Advisor with Life Insurance Corporation of India (Agency Code: 0195676N), M. Mohan Rao provides expert, personalized life insurance guidance. From family financial protection, children’s milestone funds, and retirement pensions to policy servicing and death/maturity claim documentation, clients receive dedicated and ethical advisory support.'}
+                ? 'திரு. எம். மோகன் ராவ் அவர்கள் தமிழ்நாட்டின் ஓசூரில் செயல்படும் ஒரு சுயாதீன காப்பீட்டு ஆலோசகர் ஆவார். இவர் ஆயுள் காப்பீடு (இந்திய ஆயுள் காப்பீட்டுக் கழகம் - LIC தலைவர் மன்ற உறுப்பினர் & MDRT), மருத்துவக் காப்பீடு (ஸ்டார் ஹெல்த் அண்ட் அலைட் இன்சூரன்ஸ்), மற்றும் பொதுக் காப்பீடு (யுனைடெட் இந்தியா இன்சூரன்ஸ்) ஆகியவற்றிற்கு தொழில்முறை வழிகாட்டல் மற்றும் பாலிசிதாரர் சேவைகளை வழங்குகிறார்.'
+                : 'M. Mohan Rao is an independent Insurance Advisor based in Hosur, Tamil Nadu. He provides dedicated insurance guidance and policyholder servicing across Life Insurance (Life Insurance Corporation of India - LIC Chairman’s Club Member & MDRT), Health Insurance (Star Health and Allied Insurance Company Limited), and General Insurance (United India Insurance Company Limited).'}
             </p>
           )}
         </div>

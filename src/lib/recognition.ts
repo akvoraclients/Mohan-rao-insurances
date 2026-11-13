@@ -8,8 +8,8 @@ import { AwardItem, AwardCategory, OwnerProfileInfo } from '@/types';
 export const OWNER_PROFILE: OwnerProfileInfo = {
   name: 'M. Mohan Rao',
   role: {
-    en: "Chairman's Club Member & LIC Financial Advisor",
-    ta: 'தலைவர் மன்ற உறுப்பினர் & எல்.ஐ.சி நிதி ஆலோசகர்',
+    en: 'Insurance Advisor',
+    ta: 'காப்பீட்டு ஆலோசகர்',
   },
   location: {
     en: 'Hosur, Tamil Nadu, India',

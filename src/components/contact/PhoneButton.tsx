@@ -42,10 +42,10 @@ export const PhoneButton: React.FC<PhoneButtonProps> = ({
         disabled
         aria-disabled="true"
         title={tooltip}
-        className={`inline-flex items-center justify-center font-medium rounded-lg bg-[#E5E7EB] text-[#6B7280] cursor-not-allowed select-none ${sizeStyles[size]} ${className}`}
+        className={`inline-flex items-center justify-center font-medium rounded-lg bg-[#E5E7EB] text-[#6B7280] cursor-not-allowed select-none whitespace-nowrap shrink-0 ${sizeStyles[size]} ${className}`}
       >
         <Clock className="w-3.5 h-3.5 shrink-0 text-[#6B7280]" aria-hidden="true" />
-        <span>{label ? `${label} (${lang === 'ta' ? 'விரைவில்' : 'Pending'})` : pendingLabel}</span>
+        <span className="whitespace-nowrap">{label ? `${label} (${lang === 'ta' ? 'விரைவில்' : 'Pending'})` : pendingLabel}</span>
       </button>
     );
   }
@@ -55,9 +55,9 @@ export const PhoneButton: React.FC<PhoneButtonProps> = ({
   const telUrl = last10 ? `tel:+91${last10}` : '#';
 
   const sizeStyles = {
-    sm: 'py-2 px-3.5 text-xs min-h-[44px] gap-1.5',
-    md: 'py-2.5 px-5 text-sm min-h-[44px] gap-2',
-    lg: 'py-3 px-6 text-base min-h-[48px] gap-2.5',
+    sm: 'py-2 px-3 text-xs min-h-[44px] gap-1.5',
+    md: 'py-2.5 px-4 text-xs sm:text-sm min-h-[44px] gap-2',
+    lg: 'py-3 px-5 sm:px-6 text-sm sm:text-base min-h-[48px] gap-2.5',
   };
 
   const variantStyles = {
@@ -70,11 +70,11 @@ export const PhoneButton: React.FC<PhoneButtonProps> = ({
   return (
     <a
       href={telUrl}
-      className={`inline-flex items-center justify-center font-semibold rounded-lg transition-colors focus:ring-2 focus:ring-offset-2 select-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`inline-flex items-center justify-center font-semibold rounded-lg transition-colors focus:ring-2 focus:ring-offset-2 select-none whitespace-nowrap shrink-0 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       aria-label={`Direct Call: ${phone}`}
     >
       <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
-      <span>{label}</span>
+      <span className="whitespace-nowrap">{label}</span>
     </a>
   );
 };

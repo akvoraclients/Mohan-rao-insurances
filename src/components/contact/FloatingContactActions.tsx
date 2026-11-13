@@ -24,8 +24,8 @@ export const FloatingContactActions: React.FC<FloatingContactActionsProps> = ({
   const whatsappText = encodeURIComponent(
     WHATSAPP_MESSAGES[lang]?.insurance ||
       (isTa
-        ? 'வணக்கம் திரு. எம். மோகன் ராவ், எல்.ஐ.சி ஆயுள் காப்பீட்டு பாலிசிகள் குறித்து ஆலோசனை பெற விரும்புகிறேன்.'
-        : 'Hello M. Mohan Rao, I would like to enquire about LIC life insurance policies.')
+        ? 'வணக்கம் திரு. எம். மோகன் ராவ், ஆயுள், மருத்துவ மற்றும் பொதுக் காப்பீடுகள் குறித்து ஆலோசனை பெற விரும்புகிறேன்.'
+        : 'Hello M. Mohan Rao, I would like to enquire about life, health, and general insurance options.')
   );
   const waUrl = `https://wa.me/919443564017?text=${whatsappText}`;
 
@@ -39,7 +39,7 @@ export const FloatingContactActions: React.FC<FloatingContactActionsProps> = ({
           rel="noopener noreferrer"
           style={{ bottom: 'calc(1rem + env(safe-area-inset-bottom, 0px))' }}
           className="fixed left-4 sm:left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 min-w-[48px] min-h-[48px] rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#1DA851] active:bg-[#178a42] hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center focus:outline-hidden focus:ring-4 focus:ring-[#25D366]/40 cursor-pointer group"
-          aria-label={isTa ? 'வாட்ஸ்அப் மூலம் திரு. எம். மோகன் ராவ் அவர்களை தொடர்பு கொள்ளவும்' : 'Chat on WhatsApp with M. Mohan Rao for Life Insurance Enquiries'}
+          aria-label={isTa ? 'வாட்ஸ்அப் மூலம் திரு. எம். மோகன் ராவ் அவர்களை தொடர்பு கொள்ளவும்' : 'Chat on WhatsApp with M. Mohan Rao for Insurance Enquiries'}
           title={isTa ? 'வாட்ஸ்அப் தொடர்பு (94435 64017)' : 'WhatsApp Enquiry (94435 64017)'}
         >
           {/* Authentic WhatsApp SVG Icon */}

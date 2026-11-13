@@ -26,18 +26,18 @@ export const Footer: React.FC<FooterProps> = ({ lang, dict }) => {
             </p>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md">
               {isTa
-                ? 'திரு. எம். மோகன் ராவ் - தலைவர் மன்ற உறுப்பினர் & MDRT நிதி ஆலோசகர் (முகவர் குறியீடு: 0195676N). ஓசூரில் குடும்ப நிதிப் பாதுகாப்பு, கல்வித் திட்டங்கள், டேர்ம் இன்சூரன்ஸ் மற்றும் பாலிசிதாரர் சேவைகளுக்கான நம்பகமான வழிகாட்டல்.'
-                : 'M. Mohan Rao – Chairman’s Club Member & MDRT Financial Advisor, Life Insurance Corporation of India (Agency Code: 0195676N). Dedicated to guiding individuals and families in Hosur toward long-term financial security.'}
+                ? 'திரு. எம். மோகன் ராவ் – ஓசூரில் செயல்படும் காப்பீட்டு ஆலோசகர். ஆயுள் காப்பீடு (LIC), மருத்துவக் காப்பீடு (Star Health), மற்றும் பொதுக் காப்பீடு (United India Insurance) ஆகியவற்றிற்கான முழுமையான வழிகாட்டல் மற்றும் பாலிசிதாரர் சேவை.'
+                : 'M. Mohan Rao – Insurance Advisor in Hosur, Tamil Nadu. Professional guidance and policyholder servicing across Life Insurance (LIC), Health Insurance (Star Health), and General Insurance (United India Insurance).'}
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-2 text-xs">
               <span className="px-2.5 py-1 rounded-md bg-brand-charcoal-800 text-amber-300 font-semibold border border-brand-charcoal-600">
-                LIC Code: {BUSINESS_INFO.agencyCode}
+                Life Insurance (LIC)
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-brand-charcoal-800 text-slate-300 font-semibold border border-brand-charcoal-600">
-                MDRT Member
+              <span className="px-2.5 py-1 rounded-md bg-brand-charcoal-800 text-cyan-300 font-semibold border border-brand-charcoal-600">
+                Health Insurance (Star Health)
               </span>
-              <span className="px-2.5 py-1 rounded-md bg-brand-charcoal-800 text-slate-300 font-semibold border border-brand-charcoal-600">
-                Chairman&apos;s Club Member
+              <span className="px-2.5 py-1 rounded-md bg-brand-charcoal-800 text-amber-200 font-semibold border border-brand-charcoal-600">
+                General Insurance (United India)
               </span>
             </div>
           </div>
@@ -174,7 +174,7 @@ export const Footer: React.FC<FooterProps> = ({ lang, dict }) => {
 
         {/* Bottom Attribution & Copyright */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-2">
-          <p>© {new Date().getFullYear()} {BUSINESS_INFO.name} – LIC Financial Advisor. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {BUSINESS_INFO.name} – Insurance Advisor. All rights reserved.</p>
           <p>{BUSINESS_INFO.location}</p>
         </div>
       </div>

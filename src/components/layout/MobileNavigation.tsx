@@ -121,8 +121,8 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
   const whatsappMessage = encodeURIComponent(
     WHATSAPP_MESSAGES[lang]?.insurance ||
       (isTa
-        ? 'வணக்கம் திரு. எம். மோகன் ராவ், எல்.ஐ.சி ஆயுள் காப்பீட்டு பாலிசிகள் குறித்து ஆலோசனை பெற விரும்புகிறேன்.'
-        : 'Hello M. Mohan Rao, I would like to enquire about LIC life insurance policies.')
+        ? 'வணக்கம் திரு. எம். மோகன் ராவ், ஆயுள், மருத்துவ மற்றும் பொதுக் காப்பீடுகள் குறித்து ஆலோசனை பெற விரும்புகிறேன்.'
+        : 'Hello M. Mohan Rao, I would like to enquire about life, health, and general insurance options.')
   );
   const whatsappUrl = `https://wa.me/919443564017?text=${whatsappMessage}`;
 
@@ -170,10 +170,10 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
           </button>
         </div>
 
-        {/* Credentials Pill inside mobile menu */}
+        {/* Advisory Pill inside mobile menu */}
         <div className="px-4 py-2.5 bg-brand-navy-50 border-b border-brand-navy-100 flex items-center gap-2 text-xs text-brand-navy font-semibold">
           <ShieldCheck className="w-4 h-4 text-brand-gold-600 shrink-0" aria-hidden="true" />
-          <span>LIC Agency Code: {BUSINESS_INFO.agencyCode}</span>
+          <span>{isTa ? 'காப்பீட்டு ஆலோசகர் • ஓசூர்' : 'Insurance Advisor • Hosur'}</span>
         </div>
 
         {/* Language switcher bar */}
@@ -203,9 +203,9 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
                 }`}
                 aria-current={isActive ? 'page' : undefined}
               >
-                <span>{item.label}</span>
+                <span className="whitespace-nowrap">{item.label}</span>
                 <ArrowRight
-                  className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-slate-300'}`}
+                  className={`w-4 h-4 shrink-0 ${isActive ? 'text-amber-400' : 'text-slate-300'}`}
                   aria-hidden="true"
                 />
               </Link>
@@ -227,10 +227,10 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
               className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-bold hover:bg-brand-navy-900 transition-colors min-h-[44px]"
             >
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
-                <span>95002 53993</span>
+                <Phone className="w-3.5 h-3.5 text-amber-400 shrink-0" aria-hidden="true" />
+                <span className="whitespace-nowrap">95002 53993</span>
               </div>
-              <span className="text-[10px] text-amber-300 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] text-amber-300 font-semibold uppercase tracking-wider whitespace-nowrap shrink-0">
                 {isTa ? 'அழைக்க' : 'Call Primary'}
               </span>
             </a>
@@ -243,10 +243,10 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
               className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition-colors min-h-[44px]"
             >
               <div className="flex items-center gap-2">
-                <MessageCircle className="w-3.5 h-3.5 text-white" aria-hidden="true" />
-                <span>94435 64017</span>
+                <MessageCircle className="w-3.5 h-3.5 text-white shrink-0" aria-hidden="true" />
+                <span className="whitespace-nowrap">94435 64017</span>
               </div>
-              <span className="text-[10px] text-emerald-100 font-semibold uppercase tracking-wider">
+              <span className="text-[10px] text-emerald-100 font-semibold uppercase tracking-wider whitespace-nowrap shrink-0">
                 WhatsApp
               </span>
             </a>

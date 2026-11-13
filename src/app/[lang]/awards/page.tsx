@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title =
     lang === 'ta'
-      ? 'விருதுகள் & சாதனைகள் | திரு. எம். மோகன் ராவ் – எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்'
-      : 'Awards & Achievements | M. Mohan Rao – LIC Financial Advisor in Hosur';
+      ? 'விருதுகள் & சாதனைகள் | திரு. எம். மோகன் ராவ் – காப்பீட்டு ஆலோசகர் ஓசூர்'
+      : 'Awards & Achievements | M. Mohan Rao – Insurance Advisor in Hosur';
 
   const description =
     lang === 'ta'
-      ? 'திரு. எம். மோகன் ராவ் (எல்.ஐ.சி முகவர் குறியீடு: 0195676N, தலைவர் மன்ற உறுப்பினர் & MDRT) அவர்களின் 21 தொழில்முறை அங்கீகாரங்கள், விருதுகள் மற்றும் மைல்கற்களின் ஆவணப் படத்தொகுப்பு.'
-      : 'Explore the 21 documented awards, recognitions, and professional milestones of M. Mohan Rao, Chairman’s Club Member & MDRT LIC Financial Advisor in Hosur, Tamil Nadu (Agency Code: 0195676N).';
+      ? 'திரு. எம். மோகன் ராவ் அவர்களின் 21 தொழில்முறை அங்கீகாரங்கள், எல்.ஐ.சி தலைவர் மன்றம் & MDRT கௌரவங்கள் மற்றும் மைல்கற்களின் ஆவணப் படத்தொகுப்பு (LIC முகவர் குறியீடு: 0195676N, ஓசூர்).'
+      : 'Explore the 21 documented awards, LIC Chairman’s Club Member & MDRT honors, and professional milestones of M. Mohan Rao, Insurance Advisor in Hosur, Tamil Nadu.';
 
   return generateSeoMetadata(lang, title, description);
 }
@@ -67,15 +67,15 @@ export default async function AwardsPage({ params }: PageProps) {
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xs">
               <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-amber-300 text-amber-900 font-bold shadow-2xs">
                 <Award className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
-                <span>Chairman’s Club Member</span>
+                <span>LIC Chairman’s Club Member</span>
               </span>
               <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-amber-300 text-amber-900 font-bold shadow-2xs">
                 <Award className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
-                <span>MDRT Member</span>
+                <span>MDRT Member (Life Insurance)</span>
               </span>
               <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-navy text-white font-bold text-[11px]">
                 <ShieldCheck className="w-3 h-3 text-amber-400" aria-hidden="true" />
-                <span>Agency Code: {BUSINESS_INFO.agencyCode}</span>
+                <span>LIC Agency Code: {BUSINESS_INFO.agencyCode}</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-700 font-medium pt-1">
@@ -118,10 +118,10 @@ export default async function AwardsPage({ params }: PageProps) {
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <a
               href="tel:+919500253993"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold bg-amber-500 hover:bg-amber-400 text-brand-navy shadow-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold bg-amber-500 hover:bg-amber-400 text-brand-navy shadow-sm transition-colors whitespace-nowrap shrink-0 min-h-[44px]"
             >
-              <Phone className="w-4 h-4" aria-hidden="true" />
-              <span>{isTa ? 'அழைக்க: +91 95002 53993' : 'Call: +91 95002 53993'}</span>
+              <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
+              <span className="whitespace-nowrap">{isTa ? 'அழைக்க: +91 95002 53993' : 'Call: +91 95002 53993'}</span>
             </a>
             <a
               href={`https://wa.me/919443564017?text=${encodeURIComponent(
@@ -131,16 +131,16 @@ export default async function AwardsPage({ params }: PageProps) {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-colors whitespace-nowrap shrink-0 min-h-[44px]"
             >
-              <MessageCircle className="w-4 h-4" aria-hidden="true" />
-              <span>{isTa ? 'வாட்ஸ்அப் செய்தி' : 'WhatsApp Enquiry'}</span>
+              <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
+              <span className="whitespace-nowrap">{isTa ? 'வாட்ஸ்அப் செய்தி' : 'WhatsApp Enquiry'}</span>
             </a>
             <Link
               href={`/${lang}/contact`}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-colors whitespace-nowrap shrink-0 min-h-[44px]"
             >
-              <span>{isTa ? 'தொடர்பு படிவம்' : 'Contact Form'}</span>
+              <span className="whitespace-nowrap">{isTa ? 'தொடர்பு படிவம்' : 'Contact Form'}</span>
             </Link>
           </div>
         </div>

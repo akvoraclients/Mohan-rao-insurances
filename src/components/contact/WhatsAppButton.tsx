@@ -49,10 +49,10 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         disabled
         aria-disabled="true"
         title={tooltip}
-        className={`inline-flex items-center justify-center font-medium rounded-lg border border-slate-200 bg-slate-100 text-slate-400 cursor-not-allowed select-none ${sizeStyles[size]} ${className}`}
+        className={`inline-flex items-center justify-center font-medium rounded-lg border border-slate-200 bg-slate-100 text-slate-400 cursor-not-allowed select-none whitespace-nowrap shrink-0 ${sizeStyles[size]} ${className}`}
       >
         <Clock className="w-3.5 h-3.5 shrink-0 text-slate-400" aria-hidden="true" />
-        <span>{label ? `${label} (${lang === 'ta' ? 'விரைவில்' : 'Pending'})` : pendingLabel}</span>
+        <span className="whitespace-nowrap">{label ? `${label} (${lang === 'ta' ? 'விரைவில்' : 'Pending'})` : pendingLabel}</span>
       </button>
     );
   }
@@ -69,18 +69,18 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Direct WhatsApp Enquiry"
-        className={`fixed bottom-6 right-6 z-50 p-3.5 bg-brand-teal text-white rounded-full shadow-lg hover:bg-brand-teal-700 hover:scale-105 transition-all flex items-center justify-center focus:outline-hidden focus:ring-4 focus:ring-brand-teal/30 min-w-[48px] min-h-[48px] ${className}`}
+        className={`fixed bottom-6 right-6 z-50 p-3.5 bg-brand-teal text-white rounded-full shadow-lg hover:bg-brand-teal-700 hover:scale-105 transition-all flex items-center justify-center focus:outline-hidden focus:ring-4 focus:ring-brand-teal/30 min-w-[48px] min-h-[48px] shrink-0 ${className}`}
       >
-        <MessageSquare className="w-6 h-6" aria-hidden="true" />
+        <MessageSquare className="w-6 h-6 shrink-0" aria-hidden="true" />
         <span className="sr-only">Open WhatsApp chat for insurance enquiries</span>
       </a>
     );
   }
 
   const sizeStyles = {
-    sm: 'py-2 px-3.5 text-xs min-h-[44px] gap-1.5',
-    md: 'py-2.5 px-5 text-sm min-h-[44px] gap-2',
-    lg: 'py-3 px-6 text-base min-h-[48px] gap-2.5',
+    sm: 'py-2 px-3 text-xs min-h-[44px] gap-1.5',
+    md: 'py-2.5 px-4 text-xs sm:text-sm min-h-[44px] gap-2',
+    lg: 'py-3 px-5 sm:px-6 text-sm sm:text-base min-h-[48px] gap-2.5',
   };
 
   const variantStyles = {
@@ -94,11 +94,11 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
       href={waUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center font-semibold rounded-lg transition-colors focus:ring-2 focus:ring-offset-2 select-none ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      className={`inline-flex items-center justify-center font-semibold rounded-lg transition-colors focus:ring-2 focus:ring-offset-2 select-none whitespace-nowrap shrink-0 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       aria-label={`WhatsApp Enquiry: ${label}`}
     >
       <MessageSquare className="w-4 h-4 shrink-0" aria-hidden="true" />
-      <span>{label}</span>
+      <span className="whitespace-nowrap">{label}</span>
     </a>
   );
 };

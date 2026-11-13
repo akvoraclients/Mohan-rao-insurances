@@ -164,12 +164,12 @@ export const AwardsGallery: React.FC<AwardsGalleryProps> = ({
             <button
               type="button"
               onClick={() => openLightbox(0)}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-brand-navy text-white hover:bg-brand-navy-900 shadow-xs transition-colors cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-navy text-white hover:bg-brand-navy-900 shadow-xs transition-colors cursor-pointer whitespace-nowrap shrink-0 min-h-[40px]"
             >
-              <ZoomIn className="w-4 h-4 text-amber-300" aria-hidden="true" />
-              <span>{isTa ? 'சாதனைகள் அனைத்தையும் காண்க' : 'Open Full Lightbox View'}</span>
+              <ZoomIn className="w-4 h-4 text-amber-300 shrink-0" aria-hidden="true" />
+              <span className="whitespace-nowrap">{isTa ? 'சாதனைகள் அனைத்தையும் காண்க' : 'Open Full Lightbox View'}</span>
             </button>
-            <span className="text-xs text-slate-500 font-medium">
+            <span className="text-xs text-slate-500 font-medium whitespace-nowrap">
               {isTa ? '21 சாதனைகளின் ஆவணத் தொகுப்பு' : '21 Documented Honors & Milestones'}
             </span>
           </div>
@@ -235,10 +235,10 @@ export const AwardsGallery: React.FC<AwardsGalleryProps> = ({
         <div className="mt-8 sm:mt-10 text-center flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Link
             href={`/${lang}/awards`}
-            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl text-sm font-bold bg-brand-navy text-white hover:bg-brand-navy-900 shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer"
+            className="inline-flex items-center justify-center gap-2.5 px-5 sm:px-6 py-3 rounded-xl text-xs sm:text-sm font-bold bg-brand-navy text-white hover:bg-brand-navy-900 shadow-sm hover:shadow-md transition-all duration-200 group cursor-pointer whitespace-nowrap shrink-0 min-h-[44px]"
           >
-            <span>{isTa ? 'அனைத்து 21 சாதனைகளையும் காண்க' : 'Explore All 21 Achievements'}</span>
-            <ArrowRight className="w-4 h-4 text-amber-400 group-hover:translate-x-1 transition-transform" />
+            <span className="whitespace-nowrap">{isTa ? 'அனைத்து 21 சாதனைகளையும் காண்க' : 'Explore All 21 Achievements'}</span>
+            <ArrowRight className="w-4 h-4 text-amber-400 group-hover:translate-x-1 transition-transform shrink-0" />
           </Link>
           <span className="text-xs text-slate-500 font-medium">
             {isTa ? 'முழு பக்க தொகுப்பிற்கு செல்லவும்' : 'View full high-resolution gallery page'}

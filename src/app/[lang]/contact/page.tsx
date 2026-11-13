@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title =
     lang === 'ta'
-      ? `தொடர்புக்கு | திரு. எம். மோகன் ராவ் – எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்`
-      : `Contact LIC Advisor in Hosur | M. Mohan Rao`;
+      ? `தொடர்புக்கு | திரு. எம். மோகன் ராவ் – காப்பீட்டு ஆலோசகர் ஓசூர்`
+      : `Contact Insurance Advisor in Hosur | M. Mohan Rao`;
 
   const description =
     lang === 'ta'
-      ? 'ஓசூரில் உள்ள எல்.ஐ.சி நிதி ஆலோசகர் திரு. எம். மோகன் ராவ் (முகவர் குறியீடு: 0195676N) அவர்களை தொலைபேசி (+91 95002 53993), வாட்ஸ்அப் (+91 94435 64017) அல்லது பை-பாஸ் ரோடு அலுவலகத்தில் தொடர்பு கொள்ளலாம்.'
-      : 'Contact M. Mohan Rao, Chairman’s Club Member & LIC Financial Advisor in Hosur (Agency Code: 0195676N) via phone (+91 95002 53993), WhatsApp (+91 94435 64017), or at Bye-Pass Road, Hosur.';
+      ? 'ஓசூரில் உள்ள காப்பீட்டு ஆலோசகர் திரு. எம். மோகன் ராவ் அவர்களை ஆயுள் (LIC), மருத்துவம் (Star Health), மற்றும் பொதுக் காப்பீடு (United India) ஆலோசனைகளுக்கு தொலைபேசி (+91 95002 53993), வாட்ஸ்அப் (+91 94435 64017) அல்லது பை-பாஸ் ரோடு அலுவலகத்தில் தொடர்பு கொள்ளலாம்.'
+      : 'Contact M. Mohan Rao, Insurance Advisor in Hosur for Life (LIC), Health (Star Health), and General Insurance (United India) via phone (+91 95002 53993), WhatsApp (+91 94435 64017), or at Bye-Pass Road, Hosur.';
 
   return generateSeoMetadata(lang, title, description);
 }
@@ -59,8 +59,8 @@ export default async function ContactPage({ params }: PageProps) {
         subtitle={
           contactText.subtitle ||
           (isTa
-            ? 'தனிப்பயனாக்கப்பட்ட ஆயுள் காப்பீட்டு வழிகாட்டல் மற்றும் பாலிசி சேவைகளுக்கு தொடர்பு கொள்ளவும்.'
-            : 'Reach out directly by phone, WhatsApp, or our online form for personalized life insurance advice.')
+            ? 'ஆயுள், மருத்துவ மற்றும் பொதுக் காப்பீட்டு ஆலோசனை மற்றும் பாலிசி சேவைகளுக்கு தொடர்பு கொள்ளவும்.'
+            : 'Reach out directly by phone, WhatsApp, or our online form for personalized life, health, and general insurance advice.')
         }
         badge={isTa ? 'தொடர்பு' : 'Contact'}
         theme="navy"
@@ -75,7 +75,7 @@ export default async function ContactPage({ params }: PageProps) {
           {/* Quick Direct Actions Card */}
           <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-xs">
             <div className="flex items-center gap-2 mb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-amber-500" aria-hidden="true" />
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" aria-hidden="true" />
               <h2 className="text-lg font-bold text-brand-navy">
                 {isTa ? 'நேரடி தொடர்பு வழிகள்' : 'Direct Communication Channels'}
               </h2>
@@ -83,8 +83,8 @@ export default async function ContactPage({ params }: PageProps) {
 
             <p className="text-xs text-slate-600 mb-5 leading-relaxed">
               {isTa
-                ? 'ஆயுள் காப்பீட்டு ஆலோசனைகள் மற்றும் பாலிசி சேவைகளுக்கு திரு. எம். மோகன் ராவ் அவர்களை நேரடியாக தொடர்பு கொள்ளவும்.'
-                : 'Connect directly with M. Mohan Rao for prompt life insurance advice and policy assistance.'}
+                ? 'ஆயுள் (LIC), மருத்துவம் (Star Health), மற்றும் பொதுக் காப்பீடு (United India) ஆலோசனைகள் மற்றும் பாலிசி சேவைகளுக்கு திரு. எம். மோகன் ராவ் அவர்களை நேரடியாக தொடர்பு கொள்ளவும்.'
+                : 'Connect directly with M. Mohan Rao for prompt life, health, and general insurance advice and policy assistance.'}
             </p>
 
             <div className="space-y-3">
@@ -103,7 +103,7 @@ export default async function ContactPage({ params }: PageProps) {
                     <span className="text-sm font-bold text-white tracking-wide">+91 95002 53993</span>
                   </div>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-white/15 text-amber-300">
+                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-white/15 text-amber-300 whitespace-nowrap shrink-0">
                   {isTa ? 'அழைக்க' : 'Call'}
                 </span>
               </a>
@@ -117,15 +117,15 @@ export default async function ContactPage({ params }: PageProps) {
                 aria-label="Chat on WhatsApp with M. Mohan Rao at 94435 64017"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
                     <MessageCircle className="w-5 h-5 text-white" aria-hidden="true" />
                   </div>
                   <div>
-                    <span className="text-xs text-emerald-100 block">WhatsApp</span>
-                    <span className="text-sm font-bold text-white tracking-wide">+91 94435 64017</span>
+                    <span className="text-xs text-emerald-100 block">{isTa ? 'வாட்ஸ்அப்' : 'WhatsApp'}</span>
+                    <span className="text-sm font-bold text-white tracking-wide whitespace-nowrap">+91 94435 64017</span>
                   </div>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-white/20 text-white">
+                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-white/20 text-white whitespace-nowrap shrink-0">
                   {isTa ? 'அரட்டை' : 'Chat'}
                 </span>
               </a>
@@ -147,7 +147,7 @@ export default async function ContactPage({ params }: PageProps) {
                     </span>
                   </div>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-slate-100 text-slate-600 shrink-0">
+                <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-slate-100 text-slate-600 shrink-0 whitespace-nowrap">
                   Email
                 </span>
               </a>
@@ -173,10 +173,10 @@ export default async function ContactPage({ params }: PageProps) {
                   href={GOOGLE_MAPS_OFFICE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-amber-700 hover:text-amber-800 font-bold mt-2"
+                  className="inline-flex items-center gap-1.5 text-xs text-amber-700 hover:text-amber-800 font-bold mt-2 whitespace-nowrap shrink-0"
                 >
-                  <span>{isTa ? 'கூகுள் வரைபடத்தில் பார்க்க' : 'Open in Google Maps'}</span>
-                  <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+                  <span className="whitespace-nowrap">{isTa ? 'கூகுள் வரைபடத்தில் பார்க்க' : 'Open in Google Maps'}</span>
+                  <ExternalLink className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                 </a>
               </div>
             </div>

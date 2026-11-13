@@ -5,25 +5,27 @@ import { BUSINESS_INFO } from './constants';
 export const BASE_URL = 'https://mmohanrao-insurance.com';
 
 export const HOSUR_LOCAL_KEYWORDS = [
+  'Insurance advisor in Hosur',
+  'Best insurance advisor in Hosur',
   'LIC advisor in Hosur',
   'LIC insurance agent in Hosur',
-  'Best insurance advisor in Hosur',
+  'Star Health insurance advisor in Hosur',
+  'Health insurance advisor in Hosur',
+  'United India Insurance advisor in Hosur',
+  'Health insurance consultation Hosur',
   'Life insurance advisor Hosur',
-  'LIC financial advisor Hosur',
-  'LIC policy advisor Hosur',
-  'Life insurance consultant Hosur',
-  'Insurance advisor near me',
-  'LIC agent near me',
-  'Life insurance guidance Hosur',
-  'Family life insurance planning',
-  'Life insurance consultation',
-  'LIC policy information',
-  'Financial protection planning',
-  'Life insurance for families',
-  'LIC policy assistance',
+  'General insurance guidance Hosur',
+  'Insurance agent near me',
   'Insurance consultation in Hosur',
-  'LIC agent Tamil Nadu',
-  'Life insurance services Hosur',
+  'Family life insurance planning Hosur',
+  'Vehicle insurance Hosur',
+  'Two-wheeler insurance Hosur',
+  'Car insurance advisor Hosur',
+  'Term insurance advisor Hosur',
+  'Family health cover Hosur',
+  'Senior citizen health insurance Hosur',
+  'Insurance policy servicing Hosur',
+  'M. Mohan Rao insurance advisor',
 ];
 
 export function generateSeoMetadata(
@@ -34,14 +36,14 @@ export function generateSeoMetadata(
   const isTa = lang === 'ta';
 
   const defaultTitle = isTa
-    ? `${BUSINESS_INFO.name} | எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்`
-    : `${BUSINESS_INFO.name} | LIC Financial Advisor in Hosur`;
+    ? `${BUSINESS_INFO.name} | காப்பீட்டு ஆலோசகர் ஓசூர் | LIC • Star Health • United India`
+    : `${BUSINESS_INFO.name} | Insurance Advisor in Hosur | LIC • Star Health • United India`;
 
   const title = pageTitle ? `${pageTitle} | ${BUSINESS_INFO.name}` : defaultTitle;
 
   const defaultDescription = isTa
-    ? 'ஓசூரில் எல்.ஐ.சி ஆயுள் காப்பீட்டு வழிகாட்டல் தேவையா? தலைவர் மன்ற உறுப்பினர் & MDRT ஆலோசகர் திரு. எம். மோகன் ராவ் (முகவர் குறியீடு: 0195676N) அவர்களை தொடர்பு கொண்டு ஆயுள் காப்பீட்டு ஆலோசனை மற்றும் பாலிசி சேவைகளைப் பெறுங்கள்.'
-    : "Looking for LIC insurance guidance in Hosur? Contact M. Mohan Rao, LIC Financial Advisor and Chairman's Club Member (Agency Code: 0195676N), for life insurance consultation and policy assistance.";
+    ? 'ஓசூரில் உங்கள் நம்பிக்கைக்குரிய காப்பீட்டு ஆலோசகர் திரு. எம். மோகன் ராவ். ஆயுள் காப்பீடு (LIC), மருத்துவக் காப்பீடு (Star Health), மற்றும் பொதுக் காப்பீடு (United India Insurance) பாலிசிகளுக்கான முழுமையான வழிகாட்டல் மற்றும் பாலிசிதாரர் சேவைகள்.'
+    : 'Get guidance for life insurance, health insurance, and general insurance from M. Mohan Rao, Insurance Advisor in Hosur. Explore insurance options from LIC, Star Health, and United India Insurance with dedicated personal assistance.';
 
   const description = pageDescription || defaultDescription;
 
@@ -69,20 +71,18 @@ export function generateSeoMetadata(
       },
     },
     openGraph: {
+      type: 'website',
+      locale: isTa ? 'ta_IN' : 'en_IN',
+      url: `${BASE_URL}/${lang}`,
       title,
       description,
-      siteName: `${BUSINESS_INFO.name} – LIC Financial Advisor in Hosur`,
-      locale: isTa ? 'ta_IN' : 'en_IN',
-      type: 'website',
-      url: `/${lang}`,
+      siteName: `${BUSINESS_INFO.name} – Insurance Advisor`,
       images: [
         {
-          url: '/images/owner.jpeg',
-          width: 1600,
-          height: 1200,
-          alt: isTa
-            ? 'எம். மோகன் ராவ் – எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்'
-            : 'M. Mohan Rao – LIC Financial Advisor in Hosur',
+          url: `${BASE_URL}/images/owner.jpeg`,
+          width: 1200,
+          height: 900,
+          alt: `${BUSINESS_INFO.name} – Insurance Advisor in Hosur`,
         },
       ],
     },
@@ -90,14 +90,7 @@ export function generateSeoMetadata(
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/owner.jpeg'],
-    },
-    icons: {
-      icon: [
-        { url: '/favicon.svg', type: 'image/svg+xml' },
-        { url: '/favicon.ico', sizes: 'any' },
-      ],
-      shortcut: '/favicon.ico',
+      images: [`${BASE_URL}/images/owner.jpeg`],
     },
   };
 }

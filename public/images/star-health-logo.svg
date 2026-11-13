@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
+  <!-- Star Health Background Container -->
+  <rect x="4" y="8" width="64" height="64" rx="14" fill="#0D2E5C"/>
+  
+  <!-- Outer Care Ring Accent -->
+  <circle cx="36" cy="40" r="26" stroke="#00A3E0" stroke-width="1.8" opacity="0.6"/>
+  
+  <!-- Star Health Dynamic Star Emblem -->
+  <!-- Red Spark / Top Crest -->
+  <path d="M36 18 L39.5 31 L50 33 L41 39 L43 50 L36 43 L29 50 L31 39 L22 33 L32.5 31 Z" fill="#E31E24"/>
+  <!-- Inner White Care Cross / Core Accent -->
+  <circle cx="36" cy="36" r="4.5" fill="#FFFFFF"/>
+  <path d="M34.5 36 H37.5 M36 34.5 V37.5" stroke="#E31E24" stroke-width="1.8" stroke-linecap="round"/>
+  
+  <!-- Cyan Protective Sweep (Representing Health & Life Shield) -->
+  <path d="M22 47 C26 53, 46 53, 50 47" stroke="#00A3E0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Official Brand Typography -->
+  <text x="80" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#0D2E5C" letter-spacing="0.5">
+    STAR HEALTH
+  </text>
+  <text x="80" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#E31E24" letter-spacing="0.3">
+    AND ALLIED INSURANCE
+  </text>
+  <text x="80" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#0077A8" letter-spacing="0.5">
+    The Health Insurance Specialist • Health & Care
+  </text>
+</svg>

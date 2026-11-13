@@ -388,19 +388,19 @@ export const InsuranceEnquiryForm: React.FC<InsuranceEnquiryFormProps> = ({ lang
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-navy hover:bg-brand-navy-700 text-white text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-brand-navy hover:bg-brand-navy-700 text-white text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap shrink-0 min-h-[44px]"
           >
             {status === 'loading' ? (
               <>
-                <Loader2 className="w-4 h-4 animate-spin text-brand-teal" aria-hidden="true" />
-                <span>
+                <Loader2 className="w-4 h-4 animate-spin text-brand-teal shrink-0" aria-hidden="true" />
+                <span className="whitespace-nowrap">
                   {lang === 'ta' ? 'அனுப்பப்படுகிறது...' : 'Sending...'}
                 </span>
               </>
             ) : (
               <>
-                <Send className="w-4 h-4 text-brand-teal" aria-hidden="true" />
-                <span>
+                <Send className="w-4 h-4 text-brand-teal shrink-0" aria-hidden="true" />
+                <span className="whitespace-nowrap">
                   {enquiryText.submitBtn ||
                     (lang === 'ta' ? 'காப்பீட்டு விசாரணையை சமர்ப்பிக்கவும்' : 'Submit Query')}
                 </span>

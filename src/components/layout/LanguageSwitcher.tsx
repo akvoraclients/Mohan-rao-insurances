@@ -44,7 +44,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
 
   return (
     <div
-      className={`inline-flex items-center bg-slate-100/90 border border-slate-200/80 rounded-full p-0.5 sm:p-1 text-xs font-semibold ${className}`}
+      className={`inline-flex items-center bg-slate-100/90 border border-slate-200/80 rounded-full p-0.5 sm:p-1 text-xs font-semibold whitespace-nowrap shrink-0 ${className}`}
       role="group"
       aria-label="Language selection"
     >
@@ -53,7 +53,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       <Link
         href={getTargetHref('en')}
         onClick={() => handleLanguageClick('en')}
-        className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full transition-all text-xs font-semibold select-none ${
+        className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full transition-all text-xs font-semibold select-none whitespace-nowrap shrink-0 ${
           currentLang === 'en'
             ? 'bg-brand-navy text-white shadow-xs'
             : 'text-slate-700 hover:text-brand-navy hover:bg-slate-200/60'
@@ -64,12 +64,12 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         EN
       </Link>
 
-      <span className="text-slate-300 mx-0.5 select-none" aria-hidden="true">|</span>
+      <span className="text-slate-300 mx-0.5 select-none shrink-0" aria-hidden="true">|</span>
 
       <Link
         href={getTargetHref('ta')}
         onClick={() => handleLanguageClick('ta')}
-        className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full transition-all text-xs font-semibold select-none ${
+        className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full transition-all text-xs font-semibold select-none whitespace-nowrap shrink-0 ${
           currentLang === 'ta'
             ? 'bg-brand-navy text-white shadow-xs'
             : 'text-slate-700 hover:text-brand-navy hover:bg-slate-200/60'

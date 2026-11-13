@@ -31,7 +31,7 @@ export const Navigation: React.FC<NavigationProps> = ({
   ];
 
   return (
-    <nav className={className} aria-label="Main Navigation">
+    <nav className={`flex items-center whitespace-nowrap shrink-0 ${className}`} aria-label="Main Navigation">
       {navItems.map((item) => {
         const isExactMatch = pathname === item.href || pathname === `${item.href}/`;
         const isNestedMatch = item.key !== 'home' && pathname?.startsWith(`${item.href}`);
@@ -42,14 +42,14 @@ export const Navigation: React.FC<NavigationProps> = ({
             key={item.key}
             href={item.href}
             onClick={onItemClick}
-            className={`text-sm font-semibold transition-colors relative py-1 ${
+            className={`whitespace-nowrap shrink-0 text-xs xl:text-sm font-semibold transition-colors relative py-1 inline-flex items-center ${
               isActive
                 ? 'text-brand-navy font-bold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-brand-teal after:rounded-full'
                 : 'text-slate-600 hover:text-brand-navy'
             } ${itemClassName}`}
             aria-current={isActive ? 'page' : undefined}
           >
-            {item.label}
+            <span className="whitespace-nowrap">{item.label}</span>
           </Link>
         );
       })}

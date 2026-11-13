@@ -306,19 +306,19 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full py-3 px-4 rounded-xl bg-brand-navy text-white font-semibold text-sm hover:bg-brand-navy-900 transition-all flex items-center justify-center gap-2 focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+          className="w-full py-3 px-4 rounded-xl bg-brand-navy text-white font-semibold text-xs sm:text-sm hover:bg-brand-navy-900 transition-all inline-flex items-center justify-center gap-2 whitespace-nowrap focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer min-h-[44px]"
         >
           {status === 'loading' ? (
             <>
-              <Loader2 className="w-4 h-4 animate-spin text-brand-teal" aria-hidden="true" />
-              <span>
+              <Loader2 className="w-4 h-4 animate-spin text-brand-teal shrink-0" aria-hidden="true" />
+              <span className="whitespace-nowrap">
                 {lang === 'ta' ? 'அனுப்பப்படுகிறது...' : 'Sending...'}
               </span>
             </>
           ) : (
             <>
-              <Send className="w-4 h-4 text-brand-teal" aria-hidden="true" />
-              <span>{lang === 'ta' ? 'விசாரணையை சமர்ப்பிக்க' : 'Submit Query'}</span>
+              <Send className="w-4 h-4 text-brand-teal shrink-0" aria-hidden="true" />
+              <span className="whitespace-nowrap">{lang === 'ta' ? 'விசாரணையை சமர்ப்பிக்க' : 'Submit Query'}</span>
             </>
           )}
         </button>

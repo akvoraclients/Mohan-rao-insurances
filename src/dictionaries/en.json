@@ -2,16 +2,16 @@
   "brand": {
     "name": "M. Mohan Rao",
     "owner": "M. Mohan Rao",
-    "organization": "Life Insurance Corporation of India (LIC)",
-    "designation": "Chairman's Club Member & Financial Advisor",
+    "organization": "Insurance Advisory Services",
+    "designation": "Insurance Advisor",
     "agencyCode": "0195676N",
     "recognitions": [
-      "MDRT Member",
-      "Chairman's Club Member for Agents"
+      "LIC Chairman's Club Member for Agents",
+      "MDRT Member (LIC)"
     ],
     "location": "Hosur, Tamil Nadu, India",
-    "tagline": "LIC Financial Advisor & Life Insurance Guidance",
-    "positioning": "Professional life insurance advisory and policyholder services representing Life Insurance Corporation of India (LIC).",
+    "tagline": "Insurance Advisor – Life, Health & General Insurance",
+    "positioning": "Professional insurance advisory providing personalized guidance across Life Insurance (LIC), Health Insurance (Star Health), and General Insurance (United India Insurance) in Hosur.",
     "address": "Bye-Pass Road, Hosur - 635109, Tamil Nadu, India"
   },
   "nav": {
@@ -57,119 +57,119 @@
   },
   "home": {
     "hero": {
-      "badge": "Chairman's Club Member & MDRT Advisor",
-      "headline": "Secure Your Family's Future with the Right Life Insurance Guidance in Hosur",
-      "description": "Looking for trusted LIC insurance guidance in Hosur? Contact M. Mohan Rao, LIC Financial Advisor and Chairman's Club Member (Agency Code: 0195676N), for personalized life insurance consultation, family financial protection planning, and policy assistance.",
-      "supporting": "Personalized life insurance consultation, endowment savings, retirement planning, and dedicated policyholder servicing by M. Mohan Rao, Chairman's Club Member & MDRT Advisor in Hosur, Tamil Nadu.",
+      "badge": "Insurance Advisor in Hosur",
+      "headline": "Your Trusted Insurance Advisor in Hosur",
+      "description": "Get guidance for life insurance, health insurance and general insurance from M. Mohan Rao. Explore insurance options from LIC, Star Health and United India Insurance.",
+      "supporting": "Personalized insurance consultation, family health protection, vehicle insurance, and dedicated policyholder servicing by M. Mohan Rao in Hosur, Tamil Nadu.",
       "coverageInsurance": "Serving policyholders in Hosur and across Tamil Nadu",
-      "ctaInsurance": "Explore LIC Policies",
+      "ctaInsurance": "Explore Insurance Services",
       "ctaContact": "Contact Advisor",
       "ctaWhatsApp": "WhatsApp Now",
       "directConsultation": "Direct Advisor Consultation in Hosur",
-      "noMiddlemen": "Transparent Guidance • Official LIC Portal Processing",
+      "noMiddlemen": "Transparent Guidance across Life, Health & General Insurance",
       "agencyCodeLabel": "LIC Agency Code",
       "agencyCodeValue": "0195676N",
       "ownerName": "M. Mohan Rao",
-      "ownerTitle": "Chairman's Club Member & Financial Advisor",
-      "ownerRole": "LIC Financial Advisor in Hosur",
-      "ownerAlt": "M. Mohan Rao – LIC Financial Advisor in Hosur"
+      "ownerTitle": "Insurance Advisor",
+      "ownerRole": "Insurance Advisor in Hosur",
+      "ownerAlt": "M. Mohan Rao – Insurance Advisor in Hosur"
     },
     "intro": {
       "badge": "Welcome to Trusted Advisory",
-      "title": "Personalized Life Insurance Guidance You Can Trust",
-      "content": "As an authorized LIC agent and Chairman's Club Member (Agency Code: 0195676N), M. Mohan Rao assists families, professionals, and business owners in selecting the ideal life insurance coverage.",
-      "subcontent": "From term life protection and children's higher education funds to retirement annuities and claim documentation, every client receives transparent, ethical, and dedicated guidance."
+      "title": "Comprehensive Insurance Guidance You Can Trust",
+      "content": "As an independent Insurance Advisor in Hosur, M. Mohan Rao assists families, professionals, and business owners in selecting the ideal coverage across life insurance, health insurance, and general insurance.",
+      "subcontent": "From family term protection and Star Health cashless hospitalization covers to United India motor and property policies, every client receives transparent, ethical, and dedicated guidance."
     },
     "recognition": {
       "badge": "Professional Distinctions",
       "title": "Honors & Industry Recognition",
       "subtitle": "Verified professional distinctions reflecting high standards in life insurance advisory and policyholder commitment.",
-      "mdrtTitle": "MDRT Member",
+      "mdrtTitle": "MDRT Member (Life Insurance)",
       "mdrtDesc": "Million Dollar Round Table (MDRT) recognition—the premier international association of financial professionals known for professional knowledge, strict ethical conduct, and outstanding client service.",
-      "chairmansTitle": "Chairman's Club Member for Agents",
+      "chairmansTitle": "Chairman's Club Member for Agents (LIC)",
       "chairmansDesc": "Member of LIC's elite Chairman's Club for Agents—the highest and most prestigious recognition tier within Life Insurance Corporation of India honoring sustained excellence and client trust.",
       "agencyCodeNote": "Official LIC Agency Code: 0195676N"
     },
     "services": {
-      "badge": "LIC Life Insurance Solutions",
-      "title": "Comprehensive Life Insurance Guidance",
-      "subtitle": "Explore tailored LIC life insurance solutions designed to protect your family's financial future across every milestone.",
+      "badge": "Multi-Insurance Solutions",
+      "title": "Comprehensive Insurance Guidance",
+      "subtitle": "Explore tailored insurance solutions designed to protect your family's health, life, and valuable assets across every milestone.",
       "insurance": {
-        "title": "Life Insurance Solutions",
-        "description": "Professional assistance with policy comparison, proposal processing, official portal payments, and ongoing servicing.",
-        "relationshipsLabel": "Authorized Representation",
+        "title": "Insurance Solutions We Offer",
+        "description": "Professional assistance with policy comparison, proposal processing, official insurer portal payments, and ongoing servicing.",
+        "relationshipsLabel": "Partner Insurance Companies",
         "relationships": [
           "Life Insurance Corporation of India (LIC)",
-          "Term Life & Pure Risk Protection",
-          "Endowment, Savings & Children Plans",
-          "Pension & Lifelong Annuity Solutions"
+          "Star Health and Allied Insurance Company Limited",
+          "United India Insurance Company Limited"
         ],
         "features": [
-          "Personalized needs assessment",
-          "Official LIC portal proposal assistance",
+          "Life insurance: Term, endowment, pension & child plans (LIC)",
+          "Health insurance: Family floater & senior citizen covers (Star Health)",
+          "General insurance: Car, bike, commercial vehicle & property (United India)",
+          "Official insurer portal proposal assistance",
           "Timely policy renewal guidance",
-          "Maturity & death claim documentation support",
-          "Nominee, address, and status updates"
+          "Comprehensive claim documentation support"
         ],
-        "cta": "View All Policy Categories",
-        "portalNotice": "All policies, premium payments, and underwriting are processed directly through official Life Insurance Corporation of India systems."
+        "cta": "View All Insurance Categories",
+        "portalNotice": "All policies, premium payments, and underwriting are processed directly through official insurance company systems."
       }
     },
     "process": {
       "badge": "Structured Guidance",
       "title": "How Our Consultation Process Works",
-      "subtitle": "A transparent, step-by-step approach ensuring you choose the right life cover without confusion.",
-      "insuranceTitle": "Life Insurance Consultation Workflow",
+      "subtitle": "A transparent, step-by-step approach ensuring you choose the right insurance cover without confusion.",
+      "insuranceTitle": "Insurance Consultation Workflow",
       "insuranceSteps": [
         {
           "step": "01",
-          "title": "Understand Your Family's Needs",
-          "desc": "We discuss your financial goals, dependents' protection needs, income replacement requirements, and future milestones."
+          "title": "Understand Your Needs",
+          "desc": "We discuss your family's protection needs, medical coverage requirements, vehicle or property assets, and budget."
         },
         {
           "step": "02",
-          "title": "Compare Verified LIC Plans",
-          "desc": "We review suitable LIC policies—term cover, savings, or pension—explaining benefits, premium schedules, and policy terms clearly."
+          "title": "Compare Leading Plans",
+          "desc": "We review suitable options from LIC, Star Health, and United India Insurance, explaining coverage benefits, terms, and premiums clearly."
         },
         {
           "step": "03",
-          "title": "Official Portal Application",
-          "desc": "Your proposal is processed directly through official LIC systems, ensuring verified documentation and official premium receipts."
+          "title": "Official Portal Processing",
+          "desc": "Your proposal is processed directly through official insurer systems, ensuring verified documentation and official premium receipts."
         },
         {
           "step": "04",
-          "title": "Lifetime Policy Servicing",
-          "desc": "Receive dedicated ongoing support for premium renewals, address or nominee updates, and complete claim documentation assistance."
+          "title": "Dedicated Servicing & Claims",
+          "desc": "Receive continuous assistance with premium renewals, address updates, cashless hospitalisation coordination, and claim documentation."
         }
       ]
     },
     "whyUs": {
       "badge": "Why Consult M. Mohan Rao?",
       "title": "Why Choose Our Insurance Advisory?",
-      "subtitle": "Grounded in direct accountability, recognized excellence, and ethical life insurance advisory.",
+      "subtitle": "Grounded in direct personal accountability, multi-company access, and ethical insurance guidance.",
       "points": [
         {
-          "title": "MDRT & Chairman's Club Distinction",
-          "desc": "Recognized at the highest levels of life insurance advisory for ethical practices, in-depth product knowledge, and client commitment."
+          "title": "Comprehensive Multi-Insurance Portfolio",
+          "desc": "Access life insurance (LIC), health insurance (Star Health), and general insurance (United India) under one trusted roof."
         },
         {
           "title": "Direct Personalized Attention",
-          "desc": "Consult directly with M. Mohan Rao without dealing with call centers, impersonal sales bots, or confusing third-party portals."
+          "desc": "Consult directly with M. Mohan Rao without dealing with call centers, impersonal sales bots, or confusing third-party aggregators."
         },
         {
-          "title": "Official LIC Portal Processing",
-          "desc": "Complete transparency with direct LIC portal submissions, verified premium receipts, and official policy bond deliveries."
+          "title": "Official Insurer System Processing",
+          "desc": "Complete transparency with direct company submissions, verified receipts, and official insurance bond deliveries."
         },
         {
-          "title": "End-to-End Claim & Servicing Support",
-          "desc": "Active assistance whenever you need it—from renewal reminders to maturity claim payouts and bereavement claim documentation."
+          "title": "End-to-End Claim & Renewal Support",
+          "desc": "Active assistance whenever you need it—from renewal reminders to cashless hospital coordination and bereavement claim documentation."
         }
       ]
     },
     "areas": {
       "badge": "Service Location",
       "title": "Office Location & Regional Service",
-      "subtitle": "Conveniently located on Bye-Pass Road, Hosur, serving clients across Tamil Nadu and neighbouring regions.",
+      "subtitle": "Conveniently located on Bye-Pass Road, Hosur, serving clients across Hosur, Krishnagiri district, and surrounding regions.",
       "insuranceCard": {
         "title": "Hosur Advisory Office",
         "location": "Bye-Pass Road, Hosur - 635109",
@@ -179,15 +179,15 @@
     },
     "aboutOwner": {
       "badge": "About the Advisor",
-      "title": "M. Mohan Rao – LIC Financial Advisor",
-      "subtitle": "Chairman's Club Member & MDRT Advisor",
-      "content": "With prestigious Chairman's Club and MDRT distinctions, M. Mohan Rao provides trusted life insurance guidance to individuals and families. Clients receive clear advice tailored to their specific financial goals and family protection needs.",
+      "title": "M. Mohan Rao – Insurance Advisor",
+      "subtitle": "Guidance Across Life, Health & General Insurance",
+      "content": "M. Mohan Rao provides trusted insurance guidance to individuals, families, and businesses in Hosur. Clients receive clear advice tailored to their specific financial protection, medical security, and asset coverage needs.",
       "cta": "Learn More About the Advisor"
     },
     "cta": {
       "badge": "Get in Touch",
-      "title": "Ready to Protect Your Family's Financial Future?",
-      "desc": "Contact M. Mohan Rao directly for personalized life insurance advice or assistance with existing LIC policies.",
+      "title": "Ready to Protect Your Family and Assets?",
+      "desc": "Contact M. Mohan Rao directly for personalized life, health, and general insurance guidance or assistance with existing policies.",
       "btnInsurance": "Request Consultation",
       "btnContact": "Contact Advisor",
       "btnWhatsApp": "WhatsApp: 94435 64017"
@@ -195,28 +195,28 @@
   },
   "about": {
     "title": "About M. Mohan Rao",
-    "subtitle": "LIC Financial Advisor, Chairman's Club Member & MDRT Member",
+    "subtitle": "Insurance Advisor in Hosur • Life, Health & General Insurance",
     "badge": "About the Advisor",
-    "introTitle": "Professional Life Insurance Guidance & Client Commitment",
-    "introSubtitle": "Helping individuals and families make informed decisions for financial security.",
-    "bioP1": "M. Mohan Rao is an authorized Life Insurance Corporation of India (LIC) Agent and Financial Advisor based in Hosur, Tamil Nadu (Agency Code: 0195676N).",
-    "bioP2": "He holds the prestigious distinction of being a Chairman's Club Member for Agents—LIC's highest recognition tier for exceptional performance and customer servicing—as well as an MDRT (Million Dollar Round Table) Member, representing the premier standard of financial professionals globally.",
-    "bioP3": "M. Mohan Rao's philosophy centers on transparent, client-first advisory. Rather than pushing generic policies, he carefully analyzes family needs, liabilities, income replacement requirements, and future milestones to recommend verified LIC life insurance solutions.",
-    "bioP4": "Beyond new policy consultation, clients receive lifelong policy servicing including official online premium payment support, policy revival assistance, loan against policy guidance, and compassionate, thorough claims documentation support for death and maturity claims."
+    "introTitle": "Dedicated Insurance Guidance & Client Commitment",
+    "introSubtitle": "Helping individuals, families, and business owners make informed insurance decisions with complete transparency.",
+    "bioP1": "M. Mohan Rao is a professional Insurance Advisor based in Hosur, Tamil Nadu. He provides dedicated insurance consultation and policyholder servicing across Life Insurance (Life Insurance Corporation of India - LIC), Health Insurance (Star Health and Allied Insurance Company Limited), and General Insurance (United India Insurance Company Limited).",
+    "bioP2": "In his life insurance advisory with LIC, he holds the prestigious distinctions of being an LIC Chairman's Club Member for Agents—LIC's highest recognition tier for exceptional performance—as well as an MDRT (Million Dollar Round Table) Member, representing the premier standard of financial professionals globally (LIC Agency Code: 0195676N).",
+    "bioP3": "M. Mohan Rao's philosophy centers on transparent, client-first advisory. Rather than pushing generic policies, he carefully analyzes family medical requirements, income protection needs, liabilities, vehicle assets, and future financial milestones to recommend verified insurance solutions from appropriate companies.",
+    "bioP4": "Beyond initial policy consultation, clients receive lifelong policy servicing including official online premium payment support, policy revival assistance, cashless hospitalisation guidance for Star Health, motor claim coordination for United India, and thorough claims documentation support for life and maturity claims."
   },
   "awards": {
     "title": "Awards & Achievements",
-    "subtitle": "Professional recognitions, honors, and milestone achievements of M. Mohan Rao, LIC Financial Advisor in Hosur.",
+    "subtitle": "Professional recognitions, honors, and milestone achievements of M. Mohan Rao, Insurance Advisor in Hosur.",
     "badge": "Recognition Portfolio",
     "introTitle": "Celebrating Milestones of Dedicated Client Service",
-    "introSubtitle": "A documented photographic archive of 21 verified recognitions, award felicitations, and milestone moments from M. Mohan Rao's life insurance advisory career.",
+    "introSubtitle": "A documented photographic archive of 21 verified recognitions, award felicitations, and milestone moments from M. Mohan Rao's insurance advisory career.",
     "exploreAll": "Explore All 21 Achievements",
     "viewMore": "View All Recognitions",
     "milestone": "Milestone"
   },
   "contact": {
     "title": "Contact M. Mohan Rao",
-    "subtitle": "Reach out directly by phone, WhatsApp, or email for personalized life insurance advisory and policy servicing.",
+    "subtitle": "Reach out directly by phone, WhatsApp, or email for personalized life, health, and general insurance advisory and policy servicing.",
     "directChannels": "Direct Communication Channels",
     "quickAssistance": "Quick Assistance",
     "formTitle": "Consultation Request Form",
@@ -228,7 +228,7 @@
     "validationError": "Please enter your name and a valid mobile number.",
     "tryAgain": "Try Again",
     "submitAnother": "Submit Another Enquiry",
-    "whatsappInsurance": "Hello M. Mohan Rao, I would like to enquire about LIC life insurance policies.",
+    "whatsappInsurance": "Hello M. Mohan Rao, I would like to enquire about insurance policies.",
     "whatsappGeneral": "Hello M. Mohan Rao, I am contacting you through your insurance advisor website.",
     "officeAddressTitle": "Office Address",
     "officeAddressDesc": "Bye-Pass Road, Hosur - 635109, Tamil Nadu, India",
@@ -237,77 +237,62 @@
     "emailAddress": "mmrthorvath@gmail.com"
   },
   "insurance": {
-    "title": "LIC Insurance Services",
-    "subtitle": "Professional life insurance advisory, policy comparison, portal applications, renewals, and claims documentation guidance.",
-    "category": "LIC Life Insurance Solutions",
-    "badge": "Authorized LIC Agency",
-    "portalNotice": "All insurance policies, underwriting, premium receipts, and claim settlements are issued directly by the Life Insurance Corporation of India (LIC).",
+    "title": "Insurance Services",
+    "subtitle": "Professional guidance across Life Insurance (LIC), Health Insurance (Star Health), and General Insurance (United India Insurance) in Hosur.",
+    "category": "Comprehensive Insurance Solutions",
+    "badge": "Multi-Insurance Advisory",
+    "portalNotice": "All insurance policies, underwriting, premium receipts, and claim settlements are issued directly by the respective insurance corporations (LIC, Star Health, United India Insurance).",
     "learnMore": "Learn More About Our Services",
     "hero": {
-      "badge": "Authorized LIC Advisory",
-      "heading": "Professional Life Insurance Guidance Tailored for You",
-      "description": "M. Mohan Rao provides personalized consultation for LIC life insurance solutions, helping you build solid financial protection for your loved ones.",
+      "badge": "Multi-Insurance Advisory",
+      "heading": "Comprehensive Life, Health & General Insurance Guidance in Hosur",
+      "description": "M. Mohan Rao provides personalized consultation for LIC Life Insurance, Star Health Medical Coverage, and United India General Insurance, helping you safeguard your family, health, and assets.",
       "location": "Office: Bye-Pass Road, Hosur - 635109",
-      "experienceStat": "MDRT & Chairman’s Club",
-      "experienceLabel": "Recognized Excellence",
-      "ctaEnquiry": "Book a Consultation",
+      "experienceStat": "Life • Health • General",
+      "experienceLabel": "Multi-Insurer Guidance",
+      "ctaEnquiry": "Request Consultation",
       "ctaContact": "Call Advisor"
     },
     "companies": {
-      "badge": "Official Agency Representation",
-      "title": "Life Insurance Corporation of India (LIC)",
-      "subtitle": "India's largest, most trusted statutory life insurer safeguarding millions of families across generations.",
-      "portalNotice": "All policies and premium payments are processed securely through official LIC channels and portal systems.",
-      "lic": {
-        "shortName": "LIC",
-        "fullName": "Life Insurance Corporation of India",
-        "category": "Life Insurance & Financial Security",
-        "description": "Comprehensive guidance on LIC term insurance, endowment plans, children's future education funds, pension plans, and policyholder servicing.",
-        "services": [
-          "Term life insurance and family income protection",
-          "Endowment and guaranteed savings solutions",
-          "Children's education and marriage milestone planning",
-          "Retirement annuities and lifelong pension solutions",
-          "Official LIC portal premium payment guidance",
-          "Maturity and death claim documentation support",
-          "Policy revival, loan guidance, and nominee updates"
-        ]
-      }
+      "badge": "Insurance Companies We Work With",
+      "title": "Leading Insurance Providers",
+      "subtitle": "Professional guidance across India's most trusted insurance institutions.",
+      "portalNotice": "All policies and premium payments are processed securely through the official channels and portal systems of the respective insurers."
     },
     "servicesProvided": {
       "badge": "Scope of Advisory Services",
       "title": "How M. Mohan Rao Assists Clients",
-      "subtitle": "Personalized, ethical support throughout your life insurance journey.",
+      "subtitle": "Personalized, ethical support throughout your insurance journey.",
       "items": [
         {
-          "id": "new-policy",
-          "title": "New Policy Consultation",
-          "desc": "Detailed evaluation of your financial commitments, dependent needs, and savings objectives to identify suitable LIC policies."
+          "id": "life-consult",
+          "title": "Life Insurance Planning (LIC)",
+          "desc": "Detailed evaluation of dependent family protection, income replacement needs, children's future funds, and retirement pensions."
         },
         {
-          "id": "application",
-          "title": "Official Proposal Assistance",
-          "desc": "Step-by-step guidance in completing proposal documentation accurately and submitting through official LIC portals."
+          "id": "health-consult",
+          "title": "Health Insurance Guidance (Star Health)",
+          "desc": "Individual and family floater medical insurance options, senior citizen plans, and cashless hospitalisation support across Hosur hospitals."
+        },
+        {
+          "id": "general-consult",
+          "title": "General Insurance Solutions (United India)",
+          "desc": "Two-wheeler, private car, and commercial vehicle insurance, business property, shop, and personal accident cover."
         },
         {
           "id": "renewal",
           "title": "Policy Renewal Guidance",
-          "desc": "Timely reminders, official digital payment guidance, and receipt downloads to ensure continuous insurance cover."
+          "desc": "Timely reminders, official digital payment guidance, and receipt downloads to ensure continuous insurance protection."
         },
         {
           "id": "claims",
-          "title": "Claims Documentation Support",
-          "desc": "Clear, compassionate assistance with required paperwork and procedure submission for maturity and death claim payouts."
+          "title": "Claim Documentation Support",
+          "desc": "Clear, compassionate assistance with compiling paperwork and submitting claims for health, motor, and life insurance payouts."
         },
         {
           "id": "updates",
           "title": "Policy Servicing & Endorsements",
-          "desc": "Assistance with official requests for address modifications, bank account updates, and nominee endorsements in existing policies."
-        },
-        {
-          "id": "revival",
-          "title": "Policy Revival & Loan Guidance",
-          "desc": "Expert guidance on reviving lapsed LIC policies and securing official loans against your policy when needed."
+          "desc": "Assistance with official requests for address modifications, contact updates, and nominee endorsements in existing policies."
         }
       ]
     },
@@ -315,22 +300,22 @@
       "badge": "Transparent Guidance",
       "title": "How the Insurance Process Works",
       "subtitle": "A clear, transparent 4-step consultation process focused on your goals.",
-      "disclaimer": "Important Disclosure: Policy terms, underwriting criteria, premium rates, bonuses, and claim approvals are governed exclusively by Life Insurance Corporation of India (LIC) rules. M. Mohan Rao acts as an authorized agent and financial advisor.",
+      "disclaimer": "Important Disclosure: Policy terms, underwriting criteria, premium rates, and claim approvals are governed exclusively by the respective insurance corporations (LIC, Star Health, United India Insurance). M. Mohan Rao acts as an independent insurance advisor.",
       "steps": [
         {
           "step": "01",
           "title": "Understand Your Family's Goals",
-          "desc": "We discuss your family's financial obligations, dependents' future security, and long-term milestones."
+          "desc": "We evaluate your family's protection needs, medical coverage requirements, vehicle and property assets."
         },
         {
           "step": "02",
-          "title": "Explain Suitable LIC Options",
-          "desc": "We explain verified policy features, maturity benefits, death cover, and premium commitments in simple language."
+          "title": "Compare Suitable Insurer Plans",
+          "desc": "We explain verified policy features, coverage inclusions, exclusions, and premiums from LIC, Star Health, and United India Insurance."
         },
         {
           "step": "03",
           "title": "Official Proposal Submission",
-          "desc": "The proposal is processed directly through official LIC systems, ensuring verified receipts and prompt policy issuance."
+          "desc": "Your proposal is submitted directly through official insurer systems, ensuring verified receipts and prompt policy issuance."
         },
         {
           "step": "04",
@@ -341,90 +326,93 @@
     },
     "experience": {
       "badge": "Distinction & Trust",
-      "title": "Chairman's Club Member & MDRT Advisor",
-      "supporting": "Recognized at the highest levels of life insurance advisory for customer trust, ethical practice, and sustained dedication."
+      "title": "Proven Track Record & Client Dedication",
+      "supporting": "Recognized for client trust, transparent communication, and dedicated insurance advisory in Hosur."
     },
     "faq": {
       "badge": "Frequently Asked Questions",
-      "title": "Common Questions About LIC Insurance",
-      "subtitle": "Factual, straightforward answers about life insurance policies and advisor services.",
+      "title": "Common Questions About Insurance Services",
+      "subtitle": "Factual, straightforward answers about life, health, and general insurance policies and advisor services.",
       "items": [
         {
-          "q": "What is M. Mohan Rao's official LIC affiliation?",
-          "a": "M. Mohan Rao is an authorized Life Insurance Corporation of India (LIC) Agent and Financial Advisor with Agency Code 0195676N, recognized as a Chairman's Club Member for Agents and an MDRT Member."
+          "q": "Which insurance companies does M. Mohan Rao represent?",
+          "a": "M. Mohan Rao provides advisory services for Life Insurance Corporation of India (LIC - Life Insurance), Star Health and Allied Insurance Company Limited (Health Insurance), and United India Insurance Company Limited (General Insurance)."
         },
         {
           "q": "Where is the office located?",
           "a": "The advisory office is located on Bye-Pass Road, Hosur - 635109, Tamil Nadu, India. In-person consultations are available by appointment, alongside phone and WhatsApp support."
         },
         {
-          "q": "Can I enquire about new LIC policies?",
-          "a": "Yes. You can consult on all major LIC plan categories including pure term insurance, endowment savings plans, children's milestone plans, money-back policies, and retirement pension plans."
+          "q": "Can I enquire about health insurance for my family?",
+          "a": "Yes. We provide complete guidance on Star Health family floater policies, individual health plans, senior citizen covers, critical illness protection, and cashless hospitalisation networks in Hosur."
         },
         {
-          "q": "How can existing policyholders receive servicing assistance?",
-          "a": "Existing LIC policyholders can receive guidance on premium payment channels, policy revival for lapsed plans, address or phone number updates, nominee changes, and loan against policy procedures."
-        },
-        {
-          "q": "How are claim settlements handled?",
-          "a": "We assist policyholders and families with compiling the necessary claim documentation (maturity or death claims), completing official forms, and submitting them through the appropriate LIC branch procedures. Final claim underwriting and payouts are made directly by LIC."
+          "q": "Can I get vehicle and general insurance assistance?",
+          "a": "Yes. We assist with United India Insurance policies covering two-wheelers, private cars, commercial transport, shops, and personal property, including timely renewals."
         },
         {
           "q": "How are premium payments made?",
-          "a": "All premium payments are made directly to the Life Insurance Corporation of India through its official online portal, authorized merchant points, or branch cash counters. The advisor does not accept cash or personal payments."
+          "a": "All premium payments are made directly to the respective insurance companies through their official online portals, authorized digital channels, or branch cash counters. The advisor does not accept personal payments."
+        },
+        {
+          "q": "How does the advisor assist during an insurance claim?",
+          "a": "We assist policyholders and families with compiling required claim documentation, understanding policy coverage terms, and liaising with the respective insurer for smooth claim processing."
         }
       ]
     },
     "enquiry": {
       "badge": "Consultation Request",
-      "title": "Request a Life Insurance Consultation",
-      "description": "Share your requirements with M. Mohan Rao for tailored LIC life insurance advice.",
+      "title": "Request an Insurance Consultation",
+      "description": "Share your requirements with M. Mohan Rao for tailored life, health, or general insurance advice.",
       "privacyNotice": "Privacy Notice: We respect your privacy. Please do not enter Aadhaar numbers, OTPs, bank passwords, or sensitive medical records on this website.",
       "nameLabel": "Your Full Name",
       "namePlaceholder": "Enter your full name",
       "phoneLabel": "Mobile Number",
       "phonePlaceholder": "10-digit mobile number",
-      "companyLabel": "Insurance Organization",
+      "companyLabel": "Insurance Company of Interest",
       "companyOptions": [
-        "Life Insurance Corporation of India (LIC)"
+        "All Companies / General Guidance",
+        "Life Insurance Corporation of India (LIC)",
+        "Star Health and Allied Insurance Company Limited",
+        "United India Insurance Company Limited"
       ],
-      "categoryLabel": "Service Category",
+      "categoryLabel": "Insurance Category",
       "categoryOptions": [
-        "Term Life Insurance (Pure Protection)",
-        "Endowment & Savings Plans",
+        "Life Insurance (Term, Endowment, Pension - LIC)",
+        "Health Insurance (Family Floater & Medical - Star Health)",
+        "General Insurance (Motor, Vehicle, Property - United India)",
         "Children's Education & Future Planning",
-        "Retirement & Pension Solutions",
-        "Policy Renewal & Servicing Assistance",
-        "Claims Documentation Assistance"
+        "Retirement & Pension Planning",
+        "Policy Renewal & Claims Assistance"
       ],
       "locationLabel": "Your Location / City",
       "locationPlaceholder": "e.g. Hosur, Bangalore, Krishnagiri...",
       "messageLabel": "Your Requirement / Message",
-      "messagePlaceholder": "Describe your family protection goals or policy servicing requirement...",
+      "messagePlaceholder": "Describe your insurance requirement (life, health, vehicle, or policy servicing)...",
       "submitBtn": "Submit Consultation Request",
       "submissionSuccess": "Thank you! Your consultation request has been submitted successfully. M. Mohan Rao will review your requirement and get in touch with you shortly.",
       "submissionError": "Unable to submit your enquiry. Please check your connection and try again, or reach out directly via WhatsApp."
     },
     "cta": {
       "badge": "Start Today",
-      "title": "Take the First Step Toward Financial Security",
-      "description": "Consult directly with M. Mohan Rao for professional guidance on LIC policies.",
+      "title": "Take the First Step Toward Complete Financial & Health Security",
+      "description": "Consult directly with M. Mohan Rao for unbiased guidance across LIC, Star Health, and United India Insurance.",
       "btnEnquiry": "Request Consultation",
       "btnContact": "Contact Advisor"
     }
   },
   "experience": {
     "badge": "Professional Distinction",
-    "stat": "MDRT & Chairman’s Club",
-    "statUnit": "Club Member",
-    "title": "M. Mohan Rao – LIC Financial Advisor & Policyholder Guidance",
-    "description": "Dedicated assistance across life insurance policies, savings plans, retirement pensions, and claims documentation support.",
-    "insuranceHighlight": "Chairman's Club Member & MDRT Advisor providing ethical, transparent guidance for long-term financial security.",
+    "stat": "Life • Health • General",
+    "statUnit": "Advisory",
+    "title": "M. Mohan Rao – Insurance Advisor in Hosur",
+    "description": "Dedicated assistance across life insurance, medical health plans, vehicle insurance, and claims documentation support.",
+    "insuranceHighlight": "Providing ethical, transparent guidance across leading insurers for your family's complete security.",
     "aboutSectionTitle": "Professional Distinction & Client Commitment",
     "aboutSectionSubtitle": "A proven commitment to client guidance, transparent communication, and lifelong policyholder relationships.",
-    "journeyIntro": "With prestigious Chairman's Club and MDRT distinctions, M. Mohan Rao is dedicated to helping families build resilient financial safety nets.",
-    "journeyP1": "M. Mohan Rao is an authorized Life Insurance Corporation of India (LIC) Agent and Financial Advisor (Agency Code: 0195676N) based in Hosur.",
-    "journeyP2": "He has achieved membership in LIC's Chairman's Club for Agents—the highest club tier for agents—and MDRT (Million Dollar Round Table), representing the highest standards of financial professionalism.",
-    "journeyP3": "Every customer enquiry is handled directly with dedicated attention to detail, ensuring clear guidance without pressure or conflicting claims."
+    "journeyIntro": "With extensive advisory experience and prestigious LIC Chairman's Club and MDRT honors, M. Mohan Rao is dedicated to helping families build resilient protection.",
+    "journeyP1": "M. Mohan Rao is an Insurance Advisor based in Hosur, providing advisory for Life Insurance Corporation of India (LIC), Star Health and Allied Insurance, and United India Insurance.",
+    "journeyP2": "In life insurance, he has achieved membership in LIC's Chairman's Club for Agents—the premier recognition tier—and MDRT (Million Dollar Round Table), representing global excellence in financial professionalism.",
+    "journeyP3": "Every customer enquiry is handled directly with dedicated attention to detail, ensuring clear guidance across life, health, and general insurance without conflicting claims."
   }
 }

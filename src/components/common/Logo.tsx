@@ -71,7 +71,7 @@ export const Logo: React.FC<LogoProps> = ({
               isFooter ? 'text-amber-400' : 'text-brand-gold-600'
             }`}
           >
-            {isTa ? 'எல்.ஐ.சி நிதி ஆலோசகர்' : 'LIC Financial Advisor'}
+            {isTa ? 'காப்பீட்டு ஆலோசகர்' : 'Insurance Advisor'}
           </span>
         )}
       </div>
@@ -82,7 +82,7 @@ export const Logo: React.FC<LogoProps> = ({
     <Link
       href={`/${lang}`}
       className="group inline-flex items-center focus:outline-hidden focus:ring-2 focus:ring-brand-gold rounded-lg p-0.5"
-      aria-label={`${BUSINESS_INFO.name} - ${isTa ? 'எல்.ஐ.சி நிதி ஆலோசகர் முகப்பு' : 'LIC Financial Advisor Home'}`}
+      aria-label={`${BUSINESS_INFO.name} - ${isTa ? 'காப்பீட்டு ஆலோசகர் முகப்பு' : 'Insurance Advisor Home'}`}
     >
       {content}
     </Link>
