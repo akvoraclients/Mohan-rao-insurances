@@ -9,6 +9,7 @@ import { SectionHeader } from '@/components/common/SectionHeader';
 import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { RecognitionGallery } from '@/components/common/RecognitionGallery';
 import { ExperienceHighlight } from '@/components/common/ExperienceHighlight';
+import { JsonLd } from '@/components/common/JsonLd';
 import { hasVerifiedAwards } from '@/lib/recognition';
 import { Shield, ShieldCheck, HeartHandshake, MapPin, Award, ExternalLink } from 'lucide-react';
 
@@ -22,13 +23,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title =
     lang === 'ta'
-      ? `திரு. எம். மோகன் ராவ் பற்றி | எல்.ஐ.சி நிதி ஆலோசகர்`
-      : `About M. Mohan Rao | LIC Financial Advisor`;
+      ? `திரு. எம். மோகன் ராவ் பற்றி | எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்`
+      : `About M. Mohan Rao | LIC Financial Advisor in Hosur`;
 
   const description =
     lang === 'ta'
-      ? 'திரு. எம். மோகன் ராவ் - எல்.ஐ.சி தலைவர் மன்ற உறுப்பினர் & MDRT நிதி ஆலோசகர் (முகவர் குறியீடு: 0195676N). குடும்ப நிதிப் பாதுகாப்பு, டேர்ம் இன்சூரன்ஸ் மற்றும் பாலிசிதாரர் சேவை வழிகாட்டல்.'
-      : 'M. Mohan Rao – Chairman’s Club Member & MDRT Financial Advisor with Life Insurance Corporation of India (Agency Code: 0195676N), based in Hosur, Tamil Nadu.';
+      ? 'ஓசூரில் இயங்கும் எல்.ஐ.சி தலைவர் மன்ற உறுப்பினர் & MDRT நிதி ஆலோசகர் திரு. எம். மோகன் ராவ் (முகவர் குறியீடு: 0195676N) அவர்களின் பின்னணி, அனுபவம் மற்றும் குடும்ப ஆயுள் காப்பீட்டு வழிகாட்டல் நெறிகள்.'
+      : 'Learn about M. Mohan Rao, Chairman’s Club Member & MDRT Financial Advisor with Life Insurance Corporation of India (Agency Code: 0195676N), based in Hosur, Tamil Nadu. Professional life insurance advisory and policyholder assistance.';
 
   return generateSeoMetadata(lang, title, description);
 }
@@ -42,6 +43,7 @@ export default async function AboutPage({ params }: PageProps) {
 
   return (
     <Container size="narrow" className="py-8 sm:py-10 md:py-12">
+      <JsonLd lang={lang} pageType="about" includeFaq={false} />
       <SectionHeader
         title={about.title || (isTa ? 'எம். மோகன் ராவ் பற்றி' : 'About M. Mohan Rao')}
         subtitle={

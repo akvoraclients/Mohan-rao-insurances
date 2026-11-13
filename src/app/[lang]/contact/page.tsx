@@ -12,6 +12,7 @@ import { Container } from '@/components/common/Container';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { EnquiryForm } from '@/components/forms/EnquiryForm';
+import { JsonLd } from '@/components/common/JsonLd';
 import { MapPin, Phone, Mail, MessageCircle, ExternalLink, ShieldCheck } from 'lucide-react';
 
 interface PageProps {
@@ -24,13 +25,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title =
     lang === 'ta'
-      ? `தொடர்புக்கு | திரு. எம். மோகன் ராவ் (எல்.ஐ.சி நிதி ஆலோசகர்)`
-      : `Contact M. Mohan Rao | LIC Financial Advisor`;
+      ? `தொடர்புக்கு | திரு. எம். மோகன் ராவ் – எல்.ஐ.சி நிதி ஆலோசகர் ஓசூர்`
+      : `Contact LIC Advisor in Hosur | M. Mohan Rao`;
 
   const description =
     lang === 'ta'
-      ? 'திரு. எம். மோகன் ராவ் (தலைவர் மன்ற உறுப்பினர் & எல்.ஐ.சி முகவர் குறியீடு: 0195676N) அவர்களை தொலைபேசி, வாட்ஸ்அப் அல்லது ஓசூர் அலுவலகத்தில் தொடர்பு கொள்ளலாம்.'
-      : 'Contact M. Mohan Rao, Chairman’s Club Member & LIC Financial Advisor (Agency Code: 0195676N) via phone, WhatsApp, or at the Hosur office.';
+      ? 'ஓசூரில் உள்ள எல்.ஐ.சி நிதி ஆலோசகர் திரு. எம். மோகன் ராவ் (முகவர் குறியீடு: 0195676N) அவர்களை தொலைபேசி (+91 95002 53993), வாட்ஸ்அப் (+91 94435 64017) அல்லது பை-பாஸ் ரோடு அலுவலகத்தில் தொடர்பு கொள்ளலாம்.'
+      : 'Contact M. Mohan Rao, Chairman’s Club Member & LIC Financial Advisor in Hosur (Agency Code: 0195676N) via phone (+91 95002 53993), WhatsApp (+91 94435 64017), or at Bye-Pass Road, Hosur.';
 
   return generateSeoMetadata(lang, title, description);
 }
@@ -52,6 +53,7 @@ export default async function ContactPage({ params }: PageProps) {
 
   return (
     <Container className="py-8 sm:py-10 md:py-12">
+      <JsonLd lang={lang} pageType="contact" includeFaq={false} />
       <SectionHeader
         title={contactText.title || (isTa ? 'தொடர்பு கொள்ள' : 'Contact M. Mohan Rao')}
         subtitle={

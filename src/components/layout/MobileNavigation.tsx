@@ -26,6 +26,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const lastPathnameRef = React.useRef(pathname);
+  const scrollPosRef = React.useRef(0);
   const isTa = lang === 'ta';
 
   useEffect(() => {
@@ -51,22 +52,65 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  // Prevent background body scroll when open
+  // Robust, cross-platform scroll locking for mobile Safari & Android
   useEffect(() => {
+    if (!mounted) return;
+
     if (isOpen) {
+      // 1. Capture exact current scroll offset
+      scrollPosRef.current =
+        window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+      const scrollY = scrollPosRef.current;
+
+      // 2. Lock both HTML and Body, pinning body with fixed position at scrollY
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.overscrollBehavior = 'none';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
+      document.body.style.overscrollBehavior = 'none';
     } else {
-      document.body.style.overflow = 'unset';
+      // 3. Restore styles and restore user's scroll position
+      const savedScrollY = scrollPosRef.current;
+      document.documentElement.style.overflow = '';
+      document.documentElement.style.overscrollBehavior = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      document.body.style.overscrollBehavior = '';
+      if (savedScrollY) {
+        window.scrollTo(0, savedScrollY);
+      }
     }
+
     return () => {
-      document.body.style.overflow = 'unset';
+      const savedScrollY = scrollPosRef.current;
+      document.documentElement.style.overflow = '';
+      document.documentElement.style.overscrollBehavior = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      document.body.style.overscrollBehavior = '';
+      if (savedScrollY) {
+        window.scrollTo(0, savedScrollY);
+      }
     };
-  }, [isOpen]);
+  }, [isOpen, mounted]);
 
   const navItems = [
     { key: 'home', label: dict.nav?.home || 'Home', href: `/${lang}` },
     { key: 'about', label: dict.nav?.about || 'About Us', href: `/${lang}/about` },
     { key: 'insurance', label: dict.nav?.insurance || 'Insurance Services', href: `/${lang}/insurance` },
+    { key: 'awards', label: dict.nav?.awards || (lang === 'ta' ? 'விருதுகள் & சாதனைகள்' : 'Awards & Achievements'), href: `/${lang}/awards` },
     { key: 'contact', label: dict.nav?.contact || 'Contact Us', href: `/${lang}/contact` },
   ];
 
@@ -97,14 +141,21 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
           isOpen ? 'opacity-100' : 'opacity-0'
         }`}
         onClick={onClose}
+        onTouchMove={(e) => {
+          e.preventDefault();
+        }}
         aria-hidden="true"
       />
 
       {/* Slide-out drawer panel */}
       <div
-        className={`fixed top-0 right-0 bottom-0 w-full max-w-xs sm:max-w-sm bg-white shadow-2xl flex flex-col justify-between overflow-y-auto transition-transform duration-300 ease-out z-[101] ${
+        className={`fixed top-0 right-0 h-[100dvh] max-h-[100dvh] w-full max-w-xs sm:max-w-sm bg-white shadow-2xl flex flex-col justify-between overflow-y-auto overscroll-contain transition-transform duration-300 ease-out z-[101] ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{
+          overscrollBehavior: 'contain',
+          WebkitOverflowScrolling: 'touch',
+        }}
       >
         {/* Top bar with logo and close button */}
         <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-white sticky top-0 z-10">

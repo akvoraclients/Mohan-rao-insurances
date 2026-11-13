@@ -19,6 +19,8 @@ import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { RecognitionGallery } from '@/components/common/RecognitionGallery';
 import { ExperienceHighlight } from '@/components/common/ExperienceHighlight';
 import { InsuranceEnquiryForm } from '@/components/forms/InsuranceEnquiryForm';
+import { AwardsGallery } from '@/components/common/AwardsGallery';
+import { JsonLd } from '@/components/common/JsonLd';
 import {
   Shield,
   ShieldCheck,
@@ -71,14 +73,133 @@ export default async function HomePage({ params }: PageProps) {
 
   return (
     <div className="flex flex-col gap-10 md:gap-14 pb-12 md:pb-16">
+      {/* Structured Data: Local Business, Person, WebSite & FAQ JSON-LD */}
+      <JsonLd lang={lang} pageType="home" includeFaq={true} />
+
       {/* =========================================================================
-          SECTION 1: HERO SECTION
-          M. Mohan Rao – LIC Financial Advisor
+          SECTION 1: HERO SECTION – RESPONSIVE OWNER PRESENTATION
+          M. Mohan Rao – LIC Financial Advisor in Hosur
           ========================================================================= */}
-      <section className="relative overflow-hidden py-10 sm:py-14 lg:py-18 bg-gradient-to-b from-brand-navy-50/80 via-white to-amber-50/20 border-b border-slate-200">
+      <section className="relative overflow-hidden py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-brand-navy-50/80 via-white to-amber-50/20 border-b border-slate-200">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* Left Column: Headlines, Credentials, Actions */}
+          {/* -------------------------------------------------------------
+              A. MOBILE LAYOUT (< lg screens)
+              Strict Required Mobile Order:
+              1. Large owner photograph
+              2. Owner name: M. Mohan Rao
+              3. Designation: LIC Financial Advisor
+              4. Agency Code: 0195676N
+              5. Recognition badges (MDRT & Chairman's Club)
+              6. Short introduction
+              7. Contact Advisor and WhatsApp buttons
+              ------------------------------------------------------------- */}
+          <div className="flex flex-col items-center text-center lg:hidden">
+            {/* 1. Large owner photograph */}
+            <div className="relative w-full max-w-[320px] sm:max-w-sm aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border-2 border-amber-400 bg-brand-navy-900 mb-5">
+              <Image
+                src="/images/owner.jpeg"
+                alt="M. Mohan Rao – LIC Financial Advisor in Hosur"
+                fill
+                priority
+                className="object-cover object-center"
+                sizes="(max-width: 640px) 100vw, 384px"
+              />
+            </div>
+
+            {/* 2. Owner name */}
+            <h1 className="text-2xl sm:text-3xl font-black text-brand-navy tracking-tight">
+              {BUSINESS_INFO.name}
+            </h1>
+
+            {/* 3. Designation */}
+            <p className="text-sm sm:text-base font-bold text-amber-700 mt-1">
+              {isTa ? 'எல்.ஐ.சி நிதி ஆலோசகர் • தலைவர் மன்ற உறுப்பினர்' : 'LIC Financial Advisor • Chairman’s Club Member'}
+            </p>
+
+            {/* 4. Agency Code */}
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-brand-navy-50 border border-brand-navy-200 text-brand-navy text-xs font-bold mt-2.5 shadow-2xs">
+              <ShieldCheck className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
+              <span>LIC Agency Code: {BUSINESS_INFO.agencyCode}</span>
+            </div>
+
+            {/* 5. Recognition Badges */}
+            <div className="flex flex-wrap items-center justify-center gap-2 mt-3 text-xs">
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-amber-300 text-amber-800 font-bold shadow-2xs">
+                <Award className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
+                <span>MDRT Member</span>
+              </span>
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-amber-300 text-amber-800 font-bold shadow-2xs">
+                <Award className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
+                <span>Chairman’s Club Member</span>
+              </span>
+              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700 font-medium">
+                <MapPin className="w-3.5 h-3.5 text-amber-600" aria-hidden="true" />
+                <span>Hosur, Tamil Nadu</span>
+              </span>
+            </div>
+
+            {/* 6. Short Introduction */}
+            <div className="my-5 max-w-xl">
+              <h2 className="text-lg sm:text-xl font-extrabold text-brand-navy tracking-tight mb-2 leading-snug">
+                {home?.hero?.headline || (isTa ? 'சரியான ஆயுள் காப்பீட்டு வழிகாட்டல் மூலம் உங்கள் குடும்பத்தின் எதிர்காலத்தை பாதுகாத்திடுங்கள்' : "Secure Your Family's Future with the Right Life Insurance Guidance in Hosur")}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                {home?.hero?.description ||
+                  (isTa
+                    ? 'ஓசூரில் எல்.ஐ.சி ஆயுள் காப்பீட்டு பாலிசிகள் மற்றும் சேவைகளுக்கு தலைவர் மன்ற உறுப்பினர் திரு. எம். மோகன் ராவ் அவர்களின் தொழில்முறை ஆலோசனையைப் பெறுங்கள்.'
+                    : "Looking for trusted LIC insurance guidance in Hosur? Contact M. Mohan Rao, LIC Financial Advisor and Chairman's Club Member, for personalized life insurance consultation, family financial protection planning, and policy assistance.")}
+              </p>
+            </div>
+
+            {/* 7. Contact Advisor and WhatsApp buttons */}
+            <div className="w-full max-w-md flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+              <Button
+                href={`/${lang}/contact`}
+                variant="primary"
+                size="lg"
+                icon={<Phone className="w-4 h-4 text-amber-300" aria-hidden="true" />}
+                className="w-full sm:w-auto"
+              >
+                {isTa ? 'ஆலோசகரை தொடர்பு கொள்ள' : 'Contact Advisor'}
+              </Button>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm bg-emerald-600 text-white hover:bg-emerald-700 shadow-xs transition-colors"
+              >
+                <MessageCircle className="w-4 h-4 text-white" aria-hidden="true" />
+                <span>{isTa ? 'வாட்ஸ்அப்பில் பேச' : 'WhatsApp Now'}</span>
+              </a>
+
+              <Button
+                href={`/${lang}/insurance`}
+                variant="outline"
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                {isTa ? 'பாலிசி விவரங்கள்' : 'Explore Policies'}
+              </Button>
+            </div>
+
+            <div className="mt-4 flex items-center justify-center gap-1.5 text-xs text-slate-600 font-medium">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" aria-hidden="true" />
+              <span>
+                {isTa
+                  ? 'நேரடி எல்.ஐ.சி முகவர் சேவை • அதிகாரப்பூர்வ ரசீதுகள் • ஓசூர்'
+                  : 'Direct LIC Advisor Guidance in Hosur • Official Portal Payments'}
+              </span>
+            </div>
+          </div>
+
+          {/* -------------------------------------------------------------
+              B. DESKTOP LAYOUT (lg screens and above)
+              - Left: Content, headlines, credentials, buttons (~52% width)
+              - Right: Prominent photograph occupying 45-48% width
+              ------------------------------------------------------------- */}
+          <div className="hidden lg:grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Headlines, Credentials, Actions (col-span-7) */}
             <div className="lg:col-span-7 flex flex-col items-start">
               {/* Credentials Badge */}
               <div className="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-amber-300 shadow-xs text-xs font-bold text-brand-navy mb-4">
@@ -92,15 +213,15 @@ export default async function HomePage({ params }: PageProps) {
 
               {/* Main Hero Headline */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy tracking-tight leading-[1.15] mb-4">
-                {home?.hero?.headline || (isTa ? 'சரியான ஆயுள் காப்பீட்டு வழிகாட்டல் மூலம் உங்கள் குடும்பத்தின் எதிர்காலத்தை பாதுகாத்திடுங்கள்' : "Secure Your Family's Future with the Right Life Insurance Guidance")}
+                {home?.hero?.headline || (isTa ? 'சரியான ஆயுள் காப்பீட்டு வழிகாட்டல் மூலம் உங்கள் குடும்பத்தின் எதிர்காலத்தை பாதுகாத்திடுங்கள்' : "Secure Your Family's Future with the Right Life Insurance Guidance in Hosur")}
               </h1>
 
               {/* Supporting Description */}
               <p className="text-sm sm:text-base lg:text-lg text-slate-700 leading-relaxed font-normal mb-6 max-w-2xl">
                 {home?.hero?.description ||
                   (isTa
-                    ? 'எல்.ஐ.சி ஆயுள் காப்பீட்டு பாலிசிகள் பற்றிய தொழில்முறை வழிகாட்டலைப் பெற்று உங்கள் குடும்பத்தின் நிதிப் பாதுகாப்பிற்கு சரியான முடிவெடுங்கள்.'
-                    : "Get professional guidance on LIC life insurance policies and make informed decisions for your family's financial protection.")}
+                    ? 'ஓசூரில் எல்.ஐ.சி ஆயுள் காப்பீட்டு பாலிசிகள் மற்றும் சேவைகளுக்கு தலைவர் மன்ற உறுப்பினர் திரு. எம். மோகன் ராவ் அவர்களின் தொழில்முறை ஆலோசனையைப் பெறுங்கள்.'
+                    : "Looking for trusted LIC insurance guidance in Hosur? Contact M. Mohan Rao, LIC Financial Advisor and Chairman's Club Member, for personalized life insurance consultation, family financial protection planning, and policy assistance.")}
               </p>
 
               {/* Verified Identity Card Strip */}
@@ -175,15 +296,42 @@ export default async function HomePage({ params }: PageProps) {
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" aria-hidden="true" />
                 <span>
                   {isTa
-                    ? 'நேரடி எல்.ஐ.சி முகவர் சேவை • அதிகாரப்பூர்வ ரசீதுகள் • வாழ்நாள் பாலிசிதாரர் வழிகாட்டல்'
-                    : 'Direct LIC Advisor Guidance • Official Portal Payments • Lifetime Policyholder Support'}
+                    ? 'நேரடி எல்.ஐ.சி முகவர் சேவை • அதிகாரப்பூர்வ ரசீதுகள் • ஓசூர் பாலிசிதாரர் வழிகாட்டல்'
+                    : 'Direct LIC Advisor Guidance in Hosur • Official Portal Payments • Lifetime Policyholder Support'}
                 </span>
               </div>
             </div>
 
-            {/* Right Column: Advisor Profile Hero Card */}
+            {/* Right Column: Prominent Owner Photograph (~45-48% of hero width) */}
             <div className="lg:col-span-5 flex flex-col gap-4">
-              <OwnerProfile lang={lang} variant="hero" />
+              <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl border-2 border-amber-400 bg-brand-navy-900 group">
+                <Image
+                  src="/images/owner.jpeg"
+                  alt="M. Mohan Rao – LIC Financial Advisor in Hosur"
+                  fill
+                  priority
+                  className="object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
+                  sizes="(max-width: 1280px) 45vw, 540px"
+                />
+
+                {/* Overlaid Sleek Credential Tag */}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-navy-950/95 via-brand-navy-950/70 to-transparent p-5 pt-10 text-white">
+                  <div className="flex items-center justify-between gap-2">
+                    <div>
+                      <h3 className="text-lg font-black text-white">{BUSINESS_INFO.name}</h3>
+                      <p className="text-xs font-semibold text-amber-300">
+                        {isTa ? 'தலைவர் மன்ற உறுப்பினர் & எல்.ஐ.சி நிதி ஆலோசகர்' : "Chairman's Club Member & LIC Financial Advisor"}
+                      </p>
+                    </div>
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/15 text-amber-300 border border-white/20 text-xs font-bold shrink-0">
+                      <ShieldCheck className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
+                      <span>Code: {BUSINESS_INFO.agencyCode}</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience Highlight */}
               <ExperienceHighlight lang={lang} variant="compact" />
             </div>
           </div>
@@ -274,7 +422,15 @@ export default async function HomePage({ params }: PageProps) {
       </section>
 
       {/* =========================================================================
-          SECTION 3: ABOUT THE ADVISOR
+          SECTION 3: AWARDS & ACHIEVEMENTS – PREVIEW GALLERY WITH LINK TO FULL PAGE
+          Interactive Lightbox, Keyboard/Touch Navigation & Milestone Portfolio
+          ========================================================================= */}
+      <Container>
+        <AwardsGallery lang={lang} mode="preview" />
+      </Container>
+
+      {/* =========================================================================
+          SECTION 4: ABOUT THE ADVISOR
           ========================================================================= */}
       <section className="relative">
         <Container size="narrow">

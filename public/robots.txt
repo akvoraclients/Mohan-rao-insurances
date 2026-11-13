@@ -1,0 +1,30 @@
+# Robots.txt for M. Mohan Rao - LIC Financial Advisor Website
+# Production Domain: https://mmohanrao-insurance.com
+
+User-agent: *
+Allow: /
+
+# AI Search & Assistant Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://mmohanrao-insurance.com/sitemap.xml

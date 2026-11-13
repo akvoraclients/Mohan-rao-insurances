@@ -18,6 +18,7 @@
     "home": "Home",
     "about": "About Us",
     "insurance": "Insurance Services",
+    "awards": "Awards & Achievements",
     "contact": "Contact Us",
     "services": "Quick Navigation",
     "menu": "Menu",
@@ -57,21 +58,21 @@
   "home": {
     "hero": {
       "badge": "Chairman's Club Member & MDRT Advisor",
-      "headline": "Secure Your Family's Future with the Right Life Insurance Guidance",
-      "description": "Get professional guidance on LIC life insurance policies and make informed decisions for your family's financial protection.",
-      "supporting": "Personalized life insurance consultation, endowment savings, retirement planning, and dedicated policyholder servicing by M. Mohan Rao, Chairman's Club Member & MDRT Advisor.",
+      "headline": "Secure Your Family's Future with the Right Life Insurance Guidance in Hosur",
+      "description": "Looking for trusted LIC insurance guidance in Hosur? Contact M. Mohan Rao, LIC Financial Advisor and Chairman's Club Member (Agency Code: 0195676N), for personalized life insurance consultation, family financial protection planning, and policy assistance.",
+      "supporting": "Personalized life insurance consultation, endowment savings, retirement planning, and dedicated policyholder servicing by M. Mohan Rao, Chairman's Club Member & MDRT Advisor in Hosur, Tamil Nadu.",
       "coverageInsurance": "Serving policyholders in Hosur and across Tamil Nadu",
       "ctaInsurance": "Explore LIC Policies",
       "ctaContact": "Contact Advisor",
       "ctaWhatsApp": "WhatsApp Now",
-      "directConsultation": "Direct Advisor Consultation",
+      "directConsultation": "Direct Advisor Consultation in Hosur",
       "noMiddlemen": "Transparent Guidance • Official LIC Portal Processing",
       "agencyCodeLabel": "LIC Agency Code",
       "agencyCodeValue": "0195676N",
       "ownerName": "M. Mohan Rao",
       "ownerTitle": "Chairman's Club Member & Financial Advisor",
-      "ownerRole": "LIC Financial Advisor",
-      "ownerAlt": "M. Mohan Rao - LIC Financial Advisor"
+      "ownerRole": "LIC Financial Advisor in Hosur",
+      "ownerAlt": "M. Mohan Rao – LIC Financial Advisor in Hosur"
     },
     "intro": {
       "badge": "Welcome to Trusted Advisory",
@@ -202,6 +203,16 @@
     "bioP2": "He holds the prestigious distinction of being a Chairman's Club Member for Agents—LIC's highest recognition tier for exceptional performance and customer servicing—as well as an MDRT (Million Dollar Round Table) Member, representing the premier standard of financial professionals globally.",
     "bioP3": "M. Mohan Rao's philosophy centers on transparent, client-first advisory. Rather than pushing generic policies, he carefully analyzes family needs, liabilities, income replacement requirements, and future milestones to recommend verified LIC life insurance solutions.",
     "bioP4": "Beyond new policy consultation, clients receive lifelong policy servicing including official online premium payment support, policy revival assistance, loan against policy guidance, and compassionate, thorough claims documentation support for death and maturity claims."
+  },
+  "awards": {
+    "title": "Awards & Achievements",
+    "subtitle": "Professional recognitions, honors, and milestone achievements of M. Mohan Rao, LIC Financial Advisor in Hosur.",
+    "badge": "Recognition Portfolio",
+    "introTitle": "Celebrating Milestones of Dedicated Client Service",
+    "introSubtitle": "A documented photographic archive of 21 verified recognitions, award felicitations, and milestone moments from M. Mohan Rao's life insurance advisory career.",
+    "exploreAll": "Explore All 21 Achievements",
+    "viewMore": "View All Recognitions",
+    "milestone": "Milestone"
   },
   "contact": {
     "title": "Contact M. Mohan Rao",

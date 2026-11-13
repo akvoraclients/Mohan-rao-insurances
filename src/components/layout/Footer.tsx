@@ -74,6 +74,14 @@ export const Footer: React.FC<FooterProps> = ({ lang, dict }) => {
               </li>
               <li>
                 <Link
+                  href={`/${lang}/awards`}
+                  className="hover:text-amber-400 transition-colors py-0.5 inline-block"
+                >
+                  {dict.nav?.awards || (isTa ? 'விருதுகள் & சாதனைகள்' : 'Awards & Achievements')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={`/${lang}/contact`}
                   className="hover:text-white transition-colors py-0.5 inline-block"
                 >

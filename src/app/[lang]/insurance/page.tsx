@@ -17,6 +17,7 @@ import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { ExperienceHighlight } from '@/components/common/ExperienceHighlight';
 import { RecognitionGallery } from '@/components/common/RecognitionGallery';
 import { InsuranceEnquiryForm } from '@/components/forms/InsuranceEnquiryForm';
+import { JsonLd } from '@/components/common/JsonLd';
 import { hasVerifiedAwards } from '@/lib/recognition';
 import {
   Shield,
@@ -47,13 +48,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title =
     lang === 'ta'
-      ? `எல்.ஐ.சி ஆயுள் காப்பீட்டு சேவைகள் | திரு. எம். மோகன் ராவ்`
-      : `LIC Life Insurance Services | M. Mohan Rao`;
+      ? `எல்.ஐ.சி ஆயுள் காப்பீட்டு சேவைகள் ஓசூர் | திரு. எம். மோகன் ராவ்`
+      : `LIC Life Insurance Guidance in Hosur | M. Mohan Rao`;
 
   const description =
     lang === 'ta'
-      ? 'எல்.ஐ.சி டேர்ம் இன்சூரன்ஸ், சேமிப்பு, குழந்தைகள் கல்வி, ஓய்வூதியத் திட்டங்கள் மற்றும் பாலிசிதாரர் சேவை. திரு. எம். மோகன் ராவ், தலைவர் மன்ற உறுப்பினர் (LIC முகவர் குறியீடு: 0195676N).'
-      : 'Comprehensive LIC life insurance guidance, term protection, savings, retirement annuities, and policyholder servicing by M. Mohan Rao (Agency Code: 0195676N).';
+      ? 'ஓசூரில் முழுமையான எல்.ஐ.சி ஆயுள் காப்பீட்டு வழிகாட்டல்: டேர்ம் இன்சூரன்ஸ், சேமிப்புத் திட்டங்கள், குழந்தைகள் கல்வி நிதி, ஓய்வூதியத் திட்டங்கள் மற்றும் பாலிசிதாரர் சேவை. திரு. எம். மோகன் ராவ், தலைவர் மன்ற உறுப்பினர் (LIC முகவர் குறியீடு: 0195676N).'
+      : 'Comprehensive LIC life insurance guidance in Hosur: term assurance, endowment plans, children’s education funds, pension annuities, and policyholder claims assistance by M. Mohan Rao (Agency Code: 0195676N).';
 
   return generateSeoMetadata(lang, title, description);
 }
@@ -78,6 +79,7 @@ export default async function InsurancePage({ params }: PageProps) {
 
   return (
     <div className="flex flex-col gap-10 md:gap-14 pb-12 md:pb-16">
+      <JsonLd lang={lang} pageType="insurance" includeFaq={true} />
       {/* =========================================================================
           SECTION 1 – INSURANCE HERO
           ========================================================================= */}

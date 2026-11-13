@@ -26,6 +26,7 @@ export const Navigation: React.FC<NavigationProps> = ({
     { key: 'home', label: dict.nav?.home || 'Home', href: `/${lang}` },
     { key: 'about', label: dict.nav?.about || 'About Us', href: `/${lang}/about` },
     { key: 'insurance', label: dict.nav?.insurance || 'Insurance Services', href: `/${lang}/insurance` },
+    { key: 'awards', label: dict.nav?.awards || (lang === 'ta' ? 'விருதுகள் & சாதனைகள்' : 'Awards & Achievements'), href: `/${lang}/awards` },
     { key: 'contact', label: dict.nav?.contact || 'Contact Us', href: `/${lang}/contact` },
   ];
 
