@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: `${BUSINESS_INFO.name} | LIC Financial Advisor`,
   description:
     'M. Mohan Rao – Chairman’s Club Member & MDRT Financial Advisor, Life Insurance Corporation of India (Agency Code: 0195676N). Professional life insurance guidance in Hosur.',
+  verification: {
+    google: '7fHorWqUABp7yzS3mF2bMv0cSIhbl5iMOinFHNxRCkY',
+  },
   openGraph: {
     images: [
       {

@@ -70,6 +70,9 @@ export function generateSeoMetadata(
         'max-snippet': -1,
       },
     },
+    verification: {
+      google: '7fHorWqUABp7yzS3mF2bMv0cSIhbl5iMOinFHNxRCkY',
+    },
     openGraph: {
       type: 'website',
       locale: isTa ? 'ta_IN' : 'en_IN',
