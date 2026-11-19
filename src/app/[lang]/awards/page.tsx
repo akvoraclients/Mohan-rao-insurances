@@ -53,8 +53,8 @@ export default async function AwardsPage({ params }: PageProps) {
         subtitle={
           awardsDict.subtitle ||
           (isTa
-            ? 'எல்.ஐ.சி நிதி ஆலோசகர் திரு. எம். மோகன் ராவ் அவர்களின் தொழில்முறை அங்கீகாரங்கள் மற்றும் சாதனைகளின் தொகுப்பு.'
-            : 'Professional recognitions, honors, and milestone achievements of M. Mohan Rao, LIC Financial Advisor in Hosur.')
+            ? 'தொழில்முறை அங்கீகாரங்கள், சாதனைகள் மற்றும் மறக்கமுடியாத மைல்கற்கள்.'
+            : 'Professional recognitions, achievements and memorable milestones.')
         }
         badge={awardsDict.badge || (isTa ? 'சாதனைத் தொகுப்பு' : 'Recognition Portfolio')}
         theme="navy"

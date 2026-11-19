@@ -206,13 +206,15 @@
   },
   "awards": {
     "title": "Awards & Achievements",
-    "subtitle": "Professional recognitions, honors, and milestone achievements of M. Mohan Rao, Insurance Advisor in Hosur.",
+    "subtitle": "Professional recognitions, achievements and memorable milestones.",
     "badge": "Recognition Portfolio",
     "introTitle": "Celebrating Milestones of Dedicated Client Service",
     "introSubtitle": "A documented photographic archive of 21 verified recognitions, award felicitations, and milestone moments from M. Mohan Rao's insurance advisory career.",
     "exploreAll": "Explore All 21 Achievements",
     "viewMore": "View All Recognitions",
-    "milestone": "Milestone"
+    "milestone": "Milestone",
+    "clickToEnlarge": "Click to view full image",
+    "counterOf": "of"
   },
   "contact": {
     "title": "Contact M. Mohan Rao",

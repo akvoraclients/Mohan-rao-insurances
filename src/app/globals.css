@@ -134,3 +134,94 @@ button, a {
     stroke-dashoffset: 0 !important;
   }
 }
+
+/* =========================================================================
+   Awards Gallery: Animated Glowing Perimeter Border
+   A moving light travels continuously clockwise around all four edges
+   ========================================================================= */
+.award-glow-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 2.5px;
+  background: rgba(226, 232, 240, 0.9);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.35s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.award-glow-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -8px rgba(11, 59, 96, 0.22),
+              0 0 24px -4px rgba(245, 158, 11, 0.35);
+  background: rgba(203, 213, 225, 0.6);
+}
+
+.award-glow-tracer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400%;
+  height: 400%;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 260deg,
+    rgba(14, 165, 233, 0.4) 290deg,
+    rgba(14, 165, 233, 0.95) 320deg,
+    rgba(245, 158, 11, 0.95) 345deg,
+    #FDE047 356deg,
+    transparent 360deg
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+
+.award-glow-card:hover .award-glow-tracer,
+.award-glow-card:focus-visible .award-glow-tracer {
+  opacity: 1;
+  animation: awardGlowRotate 3s linear infinite;
+}
+
+@keyframes awardGlowRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.award-glow-inner {
+  position: relative;
+  z-index: 1;
+  border-radius: calc(1rem - 2.5px);
+  background: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .award-glow-card:hover .award-glow-tracer {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .award-glow-card {
+    transition: none !important;
+  }
+  .award-glow-card:hover {
+    transform: none !important;
+  }
+}
