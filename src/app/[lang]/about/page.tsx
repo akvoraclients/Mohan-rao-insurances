@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SupportedLanguage } from '@/types';
 import { getDictionary } from '@/lib/dictionary';
-import { REGULATORY_DISCLAIMER, BUSINESS_INFO, GOOGLE_MAPS_OFFICE_URL } from '@/lib/constants';
+import { REGULATORY_DISCLAIMER, BUSINESS_INFO, GOOGLE_MAPS_OFFICE_URL, GOOGLE_MAPS_EMBED_URL } from '@/lib/constants';
 import { generateSeoMetadata } from '@/lib/seo';
 import { Container } from '@/components/common/Container';
 import { SectionHeader } from '@/components/common/SectionHeader';
@@ -190,6 +190,21 @@ export default async function AboutPage({ params }: PageProps) {
               <span className="whitespace-nowrap">{isTa ? 'கூகுள் வரைபடம்' : 'View on Google Maps'}</span>
               <ExternalLink className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
             </a>
+          </div>
+
+          {/* Embedded Google Map */}
+          <div className="mt-5 rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[16/9] max-h-[360px]">
+            <iframe
+              src={GOOGLE_MAPS_EMBED_URL}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title={isTa ? 'மோகன் ராவ் இன்சூரன்ஸ் - கூகுள் வரைபடம்' : 'Mohan Rao Insurances - Google Maps Location'}
+              className="w-full h-full"
+            />
           </div>
         </div>
 

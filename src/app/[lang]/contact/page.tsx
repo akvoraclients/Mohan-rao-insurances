@@ -12,6 +12,7 @@ import { Container } from '@/components/common/Container';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import { OwnerProfile } from '@/components/common/OwnerProfile';
 import { EnquiryForm } from '@/components/forms/EnquiryForm';
+import { GoogleMapEmbed } from '@/components/common/GoogleMapEmbed';
 import { JsonLd } from '@/components/common/JsonLd';
 import { MapPin, Phone, Mail, MessageCircle, ExternalLink, ShieldCheck } from 'lucide-react';
 
@@ -196,6 +197,11 @@ export default async function ContactPage({ params }: PageProps) {
         <div>
           <EnquiryForm lang={lang} defaultCategory="general" />
         </div>
+      </div>
+
+      {/* Verified Google Maps Office Location */}
+      <div className="mt-10 sm:mt-12">
+        <GoogleMapEmbed lang={lang} variant="full" />
       </div>
     </Container>
   );

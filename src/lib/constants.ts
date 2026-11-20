@@ -24,10 +24,12 @@ export const BUSINESS_INFO: BusinessDetails = {
   isAddressConfigured: true,
 };
 
-// Verified Google Maps search URL using the confirmed public office address
-export const GOOGLE_MAPS_OFFICE_URL =
-  'https://www.google.com/maps/search/?api=1&query=' +
-  encodeURIComponent('Bye-Pass Road, Hosur - 635109, Tamil Nadu, India');
+// Verified Google Maps direct location link for Mohan Rao Insurances
+export const GOOGLE_MAPS_OFFICE_URL = 'https://maps.app.goo.gl/jsiJ2GTVSMMzJHyC7';
+
+// Official Google Maps responsive embed URL for Mohan Rao Insurances
+export const GOOGLE_MAPS_EMBED_URL =
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403.3454036005731!2d77.81729273902376!3d12.707207959756683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7150bef71931%3A0x2fcd5b4465badbda!2smohan%20rao%20insurances!5e1!3m2!1sen!2sin!4v1795194554691!5m2!1sen!2sin';
 
 export const BRAND_TAGLINE = {
   en: 'Insurance Advisor – Life, Health & General Insurance Guidance in Hosur',
